@@ -118,42 +118,11 @@ Trial edits made in the live preview do not modify the production source file. A
 
 ### User Story — US-01: Tracking Open Corrections
 
-**As a** Managing Editor,
-**I want** to see all corrections raised for the current chapter together with their status,
-**so that** I can quickly identify which issues have been addressed by DTP and which still require attention.
+> **As a** Managing Editor,  
+> **I want** to see all corrections raised for the current chapter together with their status,  
+> **so that** I can quickly identify which issues have been addressed by DTP and which still require attention.
 
-```gherkin
-Feature: Correction Tracking
-
-  Scenario: Reviewing outstanding corrections
-    Given the chapter contains open and resolved annotations
-    When the Managing Editor opens the correction list
-    Then each annotation is displayed with its current status
-    And the Managing Editor can filter the list to show only open annotations
-    And selecting an annotation takes the Managing Editor to its location in the layout
-```
-
-Traceability: FR-03 → FR-04 → US-01
-
-### User Story — US-02: Visual Layout Review
-
-**As a** Managing Editor,
-**I want** to place a pinpoint annotation directly on a photograph, illustration or other page element,
-**so that** I can clearly indicate what needs to be changed without marking and returning a printed proof.
-
-```gherkin
-Feature: Visual Layout Review
-
-  Scenario: Adding an annotation to a visual element
-    Given the Managing Editor is reviewing the current chapter layout
-    When the Managing Editor places an annotation on a photograph
-    And enters a description of the required correction
-    Then the annotation is attached to that specific location
-    And its status is set to "Open"
-    And the DTP Specialist can see the annotation in the shared preview
-```
-
-Traceability: FR-02 → FR-03 → US-02
+See full User Stories & Acceptance Criteria and traceability: [`02_requirements.md`](docs/02_requirements.md)
 
 ---
 
