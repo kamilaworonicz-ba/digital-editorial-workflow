@@ -13,13 +13,22 @@ Rather than modelling an entire publishing platform, this case study traces one 
 
 This case study focuses only on the DTP layout and revision loop for one textbook chapter. The stages before and after this loop — such as authoring, external consultation, focus-group testing, final revisions and publication — are outside the scope of the analysis.
 
-`Author manuscript → External consultation → Editorial content review → `**`DTP layout & revision loop (this case study)`**`→ Teacher focus-group testing → Revisions from focus-group feedback → Author consultation → External consultation → DTP rework → Final version → Ministry review → Publication`
+`Author manuscript` → `External consultation` → `Editorial content review` → **DTP layout & revision loop (this case study)** → `Teacher focus-group testing` → `Revisions from focus-group feedback` → `Author consultation` → `External consultation` → `DTP rework` → `Final version` → `Ministry review` → `Publication`
+
+---
+
+## 👥 Roles
+
+| Role | Responsibility in this workflow |
+|---|---|
+| Managing Editor | Reviews successive layout versions, makes trial text edits, identifies required changes, places annotations and gives final sign-off |
+| DTP Specialist (Desktop Publishing Specialist) | Prepares and updates the final page layout of the publication, places visual assets and applies accepted editorial changes to the source file |
 
 ---
 
 ## ℹ️ Context & Disclaimer
 
-- **Domain background:** The process, actors and pain points described here come from real professional experience managing editorial teams in educational publishing. In practice, this revision loop was handled primarily on paper — printed layouts were marked up in red pen and physically passed back to DTP for correction.
+- **Domain background:** The process, actors and pain points described here come from real professional experience managing editorial teams in educational publishing. In practice, this revision loop was handled primarily on paper — printed layouts were marked up in red pen &#128397; and physically passed back to DTP for correction.
 - **Portfolio nature:** The digital tool proposed below — including its requirements, user stories and business rule — is a conceptual solution created independently for this portfolio. It was never implemented at the company in question. Its purpose is to demonstrate how a Business Analyst could specify a targeted digital improvement for this particular workflow.
 
 ---
@@ -53,6 +62,8 @@ This created several recurring problems:
 - corrections existed mainly as handwritten annotations on successive paper versions,
 - determining which corrections were still outstanding required manual comparison of proofs.
 
+**The goal is to reduce unnecessary paper-based handoffs and make the revision loop faster, clearer and easier to track.**
+
 The proposed solution targets these problems through a shared digital layout preview that allows the Managing Editor to review page composition, test text fit and track corrections without relying on physical handoffs.
 
 ---
@@ -61,21 +72,18 @@ The proposed solution targets these problems through a shared digital layout pre
 
 **In scope**
 
-- Live layout preview shared between the Managing Editor and DTP Specialist
-- Text-only trial editing for checking text and caption fit
-- Digital preview of photographs, illustrations and captions within the complete page layout
-- Coordinate-pinned annotations on text and visual elements
-- Open / Resolved status for annotations
-- Consolidated view of outstanding corrections
-- Navigation from a correction directly to its location in the layout
+- Shared live layout preview for the Managing Editor and DTP Specialist
+- Text-only trial editing to check text and caption fit
+- Review of photographs, illustrations and captions within the full page layout
+- Digital annotations with Open / Resolved status
+- Consolidated tracking of outstanding corrections with direct navigation to their location
 
 **Out of scope**
 
 - Other roles and stages of the wider editorial process
-- Asset licensing and rights management for stock photography
-- Final print-ready production
-- DAM integration
-- Automatic visual comparison between consecutive DTP versions
+- Asset licensing and rights management
+- Final print-ready production and DAM integration
+- Automatic visual comparison between DTP versions
 
 ---
 
@@ -85,7 +93,7 @@ The proposed solution targets these problems through a shared digital layout pre
 |---|---|
 | FR-01 | The system shall allow the Managing Editor to trial-edit text directly in the live layout preview and immediately see whether the revised text fits the allotted space. The edit is preview-only and does not modify the source file. |
 | FR-02 | The system shall display the complete current page layout, including text, photographs, illustrations and captions, so that the Managing Editor can review page composition without requiring a printed proof. |
-| FR-03 | The system shall allow the Managing Editor to place a coordinate-pinned annotation on any text or visual element, describe the required correction, and assign the annotation a status of Open or Resolved. |
+| FR-03 | The system shall allow the Managing Editor to place a coordinate-pinned annotation on any text or visual element, describe the required correction, and assign the annotation a status of `Open` or `Resolved`. |
 | FR-04 | The system shall provide a consolidated list of annotations for the current chapter, showing their status and allowing the Managing Editor to filter the list by status and navigate directly to the corresponding location in the layout. |
 
 Full requirement detail, priorities and traceability: [`02_requirements.md`](docs/02_requirements.md)
@@ -94,22 +102,13 @@ Full requirement detail, priorities and traceability: [`02_requirements.md`](doc
 
 ## 🔒 Business Rule
 
-**BR-01 – Text-Only Sandbox Edit Rule**
+**BR-01 – Trial Edit Scope**
 
-Within the live preview, the Managing Editor may edit text only for the purpose of checking whether it fits the assigned layout space.
+The Managing Editor may edit text in the live preview only for the purpose of checking whether it fits the assigned layout space.
 
-These edits are preview-only and do not modify the production source file.
+**BR-02 – Production File Ownership**
 
-Layout changes, image placement, resizing and formatting remain the responsibility of the DTP Specialist and are made in the source layout file.
-
----
-
-## 👥 Roles
-
-| Role | Responsibility in this workflow |
-|---|---|
-| Managing Editor | Reviews successive layout versions, makes trial text edits, identifies required changes, places annotations and gives final sign-off |
-| DTP Specialist | Builds and updates the typeset layout, places visual assets and applies accepted changes to the source file |
+Trial edits made in the live preview do not modify the production source file. All accepted text changes, layout changes, image placement, resizing and formatting are applied to the source file by the DTP Specialist.
 
 ---
 
@@ -174,8 +173,8 @@ editorial-dtp-revision-ba/
 
 ## 📬 Contact
 
-**Kamila Woronicz, PhD**
-Business Analyst / Product Manager (career transition)
+**Kamila Woronicz**
+Business Analyst | Product Manager (career transition)
 
 - Email: kamila.woronicz@gmail.com
 - Location: Gdańsk, Poland
