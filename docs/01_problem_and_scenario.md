@@ -31,6 +31,16 @@ The scenario below illustrates these problems using one textbook chapter, from i
 
 *Note: The sequence below illustrates a typical revision path rather than a fixed three-round process. In practice, text, caption and visual issues could overlap and reappear across multiple iterations.*
 
+```mermaid
+flowchart LR
+    A[First DTP layout] --> B[Managing Editor reviews chapter layout]
+    B --> C{Any issues found?}
+    C -- Yes --> D[Mark text, caption or visual corrections]
+    D --> E[DTP Specialist updates source layout]
+    E --> B
+    C -- No --> F[Focus-Testing Readiness Sign-off]
+```
+
 ### Process Input
 
 DTP receives the Chapter 8 manuscript: a Word file containing the finalized text, already through external subject-matter consultation and a preliminary editorial pass by the Managing Editor.
