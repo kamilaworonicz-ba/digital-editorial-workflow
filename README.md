@@ -102,8 +102,7 @@ Full requirement detail, priorities and traceability: [`02_requirements.md`](doc
 
 ---
 
-## 🔒 Business Rule
-
+## 🔒 Business Rules
 **BR-01 – Trial Edit Scope**
 
 The Managing Editor may edit text in the live preview only for the purpose of checking whether it fits the assigned layout space.
