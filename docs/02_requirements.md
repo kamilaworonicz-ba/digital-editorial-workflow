@@ -19,12 +19,14 @@ This document specifies the conceptual digital solution proposed for the pain po
 
 ## 2. Functional Requirements
 
-| ID | Requirement | Priority |
-|---|---|---|
-| **FR-01** | The system shall let the Managing Editor make a trial edit to text, including body copy and captions, directly in the live layout preview and immediately show whether the edited text fits the allotted space. The edit is preview-only and does not modify the source file; the DTP Specialist applies any accepted change manually. | High |
-| **FR-02** | The system shall display the current page layout, including text, photographs, illustrations and captions, so that the Managing Editor can review their placement, visual balance and interaction with surrounding content without requiring a printed proof. | High |
-| **FR-03** | The system shall let the Managing Editor place a coordinate-pinned annotation on any text or visual element, describe the required correction, and track the annotation as `Open` or `Resolved`. | High |
-| **FR-04** | The system shall disable the Focus-Testing Readiness Approval action while at least one annotation on the chapter has the status `Open`. | High |
+| ID | Requirement | Typical stage | Priority |
+|---|---|---|---|
+| **FR-01** | The system shall let the Managing Editor make a trial edit to text, including body copy and captions, directly in the live layout preview and immediately show whether the edited text fits the allotted space. This edit is preview-only and does not modify the source file; the DTP Specialist applies any accepted change manually. | Initial Layout Review — Visual Assets & Caption Review | High |
+| **FR-02** | The system shall display the current page layout, including photographs, illustrations and captions, so that the Managing Editor can review their placement, visual balance and interaction with surrounding text before requesting changes from the DTP Specialist. | Visual Assets & Caption Review — Subsequent Revision Cycles | High |
+| **FR-03** | The system shall let the Managing Editor place a coordinate-pinned annotation on any text, photograph, illustration or caption, with a note describing the required correction, and track the annotation as `Open` or `Resolved`. | Throughout | High |
+| **FR-04** | The system shall prevent the Managing Editor from approving a chapter when at least one annotation has the status `Open`. | Sign-off | High |
+
+*Note: "Typical stage" reflects where each requirement is most commonly used, not a fixed sequence — consistent with the non-linear revision path described in `01_problem_and_scenario.md`.*
 
 ---
 
