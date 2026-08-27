@@ -13,8 +13,7 @@ Rather than modelling an entire publishing platform, this case study traces one 
 
 This case study focuses only on the DTP layout and revision loop for one textbook chapter. The stages before and after this loop — such as authoring, external consultation, focus-group testing, final revisions and publication — are outside the scope of the analysis.
 
-`Authoring & review` → `DTP layout & revision loop` → `Focus testing` → `Final revisions` → `Publication`
-
+`Author manuscript → External consultation → Editorial content review → `**`DTP layout & revision loop (this case study)`**`→ Teacher focus-group testing → Revisions from focus-group feedback → Author consultation → External consultation → DTP rework → Final version → Ministry review → Publication`
 
 ---
 
