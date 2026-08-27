@@ -1,7 +1,7 @@
 # Editorial–DTP Revision Workflow
 ### Business Analysis Mini Case Study
 
-`Status: Completed` `Type: Conceptual Case Study` `Domain: Publishing / EdTech` `Methodology: Agile / BPMN 2.0`
+`Status: Completed` `Type: Conceptual Case Study` `Domain: Publishing / EdTech` `Methods: BPMN 2.0 / User Stories / Gherkin`
 
 A focused BA case study of a single, well-defined process slice: the revision loop between an editor and a DTP specialist while preparing one book chapter for focus-testing with teachers. Rather than modeling an entire publishing platform, this case study traces one real scenario end-to-end — from the first DTP layout to sign-off — to demonstrate requirements analysis, process modeling, and solution specification in depth rather than breadth.
 
@@ -27,11 +27,11 @@ This case study zooms into a single highlighted stage — the DTP revision loop 
 
 ## 🧩 The Scenario
 
-**Chapter 8 of a course book, DTP version #1 → 3 revision rounds → sign-off.**
+**Illustrative scenario: Chapter 8 → first DTP layout → three revision cycles → sign-off.**
 
 | Step | What happens | Actors |
 |---|---|---|
-| **Input** | Author's manuscript (finalized after external subject-matter consultations, with preliminary editing already done by the Managing Editor) is sent to DTP for first typesetting. | Author → Managing Editor |
+| **Input** | Author's manuscript (finalized after external subject-matter consultations, with preliminary editing already done by the Managing Editor) is sent to DTP for first typesetting. | Managing Editor, DTP Specialist |
 | **Round 1 — Text fit** | Managing Editor reviews the typeset layout for text overflow/underflow caused by the page grid; flags lines and paragraphs that no longer fit. | Managing Editor, DTP Specialist |
 | **Round 2 — Visual assets** | Stock photographs (Shutterstock, delivered with a visible watermark at this stage — licensing is out of scope here) and illustrations created in-house are placed into the layout; captions are written and fitted. | Managing Editor, DTP Specialist |
 | **Round 3 — Final polish** | Remaining small corrections across text and visuals are closed out. | Managing Editor, DTP Specialist |
@@ -68,15 +68,20 @@ Every round above relied on printed proofs, red-pen annotations, and manual re-t
 | ID | Requirement | Round |
 |---|---|---|
 | **FR-01** | The system shall let the Managing Editor make a trial edit to text (body copy or captions) directly in the live layout preview and immediately show whether the edited text fits the allotted space. This edit is preview-only — it does not modify the source file; the DTP Specialist applies any accepted change manually. | 1, 2 |
-| **FR-02** | The system shall let the DTP Specialist place stock photographs (delivered as watermarked drafts) and in-house illustrations into the layout, each with an associated caption field. | 2 |
-| **FR-03** | The system shall let the Managing Editor drop a coordinate-pinned annotation on any text or visual element, with a note describing the required correction. | 1–3 |
-| **FR-04** | The system shall block the "Focus-Testing Readiness Approval" action while any annotation on the chapter remains unresolved. | 3 |
+| **FR-02** | The system shall display the current page layout, including photographs, illustrations and captions, so that the Managing Editor can review their placement, visual balance and interaction with surrounding text before requesting changes from the DTP Specialist. | 2-3 |
+| **FR-03** | The system shall let the Managing Editor place a coordinate-pinned annotation on any text, photograph, illustration or caption to indicate a required correction. | 1–3 |
+| **FR-04** | The system shall let the Managing Editor drop a coordinate-pinned annotation on any text or visual element, with a note describing the required correction. | 1–3 |
+| **FR-05** | The system shall prevent the Managing Editor from approving a chapter when at least one annotation has the status `Open`.| 3 |
 
 ---
 
 ## 🔒 Business Rule
 
-> **Text-Only Sandbox Edit Rule** — Within the live preview, only the Managing Editor's text edits are permitted, and only as a fit check. Layout, image placement, and formatting changes remain the sole responsibility of the DTP Specialist, made in the source file.
+**BR-01 – Text-Only Sandbox Edit Rule**  
+Within the live preview, the Managing Editor may edit text only for the purpose of checking whether it fits the assigned layout space. These edits are preview-only and do not modify the source file. Layout, image placement, and formatting changes remain the responsibility of the DTP Specialist.
+
+**BR-02 – Focus-Testing Approval Rule**  
+A chapter cannot be approved for focus testing while unresolved annotations exist.
 
 ---
 
@@ -89,7 +94,7 @@ Every round above relied on printed proofs, red-pen annotations, and manual re-t
 
 ---
 
-## 📄 Requirements Engineering Sample
+## 📄 Example User Story & Acceptance Criteria
 
 **User Story — US-01**
 > As a Managing Editor,
