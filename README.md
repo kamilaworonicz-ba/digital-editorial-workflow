@@ -17,12 +17,14 @@ This case study focuses only on the DTP layout and revision loop for one textboo
 
 ---
 
-## 👥 Roles
+## 👥 Actors
 
-| Role | Responsibility in this workflow |
-|---|---|
-| Managing Editor | Reviews successive layout versions, makes trial text edits, identifies required changes, places annotations and gives final sign-off |
-| DTP Specialist (Desktop Publishing Specialist) | Prepares and updates the final page layout of the publication, places visual assets and applies accepted editorial changes to the source file |
+| Actor | Involved in this workflow? | Role |
+|---|---|---|
+| **Managing Editor** | ✅ | Reviews successive layout versions, identifies required changes, makes trial text edits, places annotations and gives sign-off |
+| **DTP Specialist (Desktop Publishing Specialist)** | ✅ | Prepares and updates the typeset page layout, places visual assets and applies accepted editorial changes to the source file |
+| Author | ❌ (upstream / outside this workflow) | Provides the manuscript before the DTP revision process begins |
+| Subject-matter Reviewer | ❌ (upstream / outside this workflow) | Reviews the content before typesetting begins |
 
 ---
 
