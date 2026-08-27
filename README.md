@@ -102,17 +102,6 @@ Full requirement detail, priorities and traceability: [`02_requirements.md`](doc
 
 ---
 
-## 🔒 Business Rules
-**BR-01 – Trial Edit Scope**
-
-The Managing Editor may edit text in the live preview only for the purpose of checking whether it fits the assigned layout space.
-
-**BR-02 – Production File Ownership**
-
-Trial edits made in the live preview do not modify the production source file. All accepted text changes, layout changes, image placement, resizing and formatting are applied to the source file by the DTP Specialist.
-
----
-
 ## 📄 Example User Stories & Acceptance Criteria
 
 ### User Story — US-01: Tracking Open Corrections
