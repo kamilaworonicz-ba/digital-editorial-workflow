@@ -97,20 +97,41 @@ A chapter cannot be approved for focus testing while unresolved annotations exis
 
 ## 📄 Example User Story & Acceptance Criteria
 
-**User Story — US-01**
+**User Story — US-01: Tracking Open Corrections**
+
 > As a Managing Editor,
-> I want the sign-off action to be blocked while unresolved annotations exist on the chapter,
-> So that a version with open issues can never be mistakenly approved for focus-testing.
+> I want to see all corrections raised for the current chapter together with their status,
+> o that I can quickly identify which issues have been addressed by DTP and which still require attention.
 
 ```gherkin
-Feature: Focus-Testing Readiness Approval
+Feature: Correction Tracking
 
-Scenario: Blocking sign-off with open annotations
-  Given the chapter has 2 unresolved annotations
-  When the Managing Editor attempts to approve "Focus-Testing Readiness"
-  Then the action is disabled
-  And a validation message displays: "Cannot approve: 2 unresolved annotations remaining."
+  Scenario: Reviewing outstanding corrections
+    Given the chapter contains open and resolved annotations
+    When the Managing Editor opens the correction list
+    Then each annotation is displayed with its current status
+    And the Managing Editor can filter the list to show only open annotations
+    And selecting an annotation takes the Managing Editor to its location in the layout
 ```
+
+**User Story — US-02: Visual Layout Review**
+
+> As a Managing Editor,
+> I want to place a pinpoint annotation directly on a photograph, illustration or other page element,
+> so that I can clearly indicate what needs to be changed without marking and returning a printed proof.
+
+```gherkin
+Feature: Visual Layout Review
+
+  Scenario: Adding an annotation to a visual element
+    Given the Managing Editor is reviewing the current chapter layout
+    When the Managing Editor places an annotation on a photograph
+    And enters a description of the required correction
+    Then the annotation is attached to that specific location
+    And its status is set to "Open"
+    And the DTP Specialist can see the annotation in the shared preview
+```
+Traceability: FR-02 → FR-03 → US-03
 
 ---
 
