@@ -1,10 +1,10 @@
 # Problem & Scenario: Editorial–DTP Revision Workflow
 
-## 1. Problem Statement (AS-IS)
+## 1. Problem Statement (AS-IS) &#x1F58D;&#x1F58D;&#x1F58D;
 
 Once a manuscript was typeset for the first time, it entered an iterative revision loop between the Managing Editor and the DTP Specialist. In the process this case study is based on, the workflow was primarily paper-based.
 
-Each revision cycle followed a similar pattern: DTP produced a printed proof, the Managing Editor marked corrections by hand in red pen &#x1F58D;, and the marked-up pages were returned to DTP for another layout revision.
+Each revision cycle followed a similar pattern: DTP produced a printed proof, the Managing Editor marked corrections by hand in red pen, and the marked-up pages were returned to DTP for another layout revision.
 
 This created three recurring problems:
 
