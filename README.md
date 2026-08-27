@@ -65,12 +65,14 @@ Every round above relied on printed proofs, red-pen annotations, and manual re-t
 
 ## 📋 Functional Requirements
 
-| ID | Requirement | Typical stage |
-|---|---|---|
-| **FR-01** | The system shall let the Managing Editor make a trial edit to text (body copy or captions) directly in the live layout preview and immediately show whether the edited text fits the allotted space. This edit is preview-only — it does not modify the source file; the DTP Specialist applies any accepted change manually. | 1, 2 |
-| **FR-02** | The system shall display the current page layout, including photographs, illustrations and captions, so that the Managing Editor can review their placement, visual balance and interaction with surrounding text before requesting changes from the DTP Specialist. | 2-3 |
-| **FR-03** | The system shall let the Managing Editor place a coordinate-pinned annotation on any text, photograph, illustration or caption to indicate a required correction. | 1–3 |
-| **FR-04** | The system shall prevent the Managing Editor from approving a chapter when at least one annotation has the status `Open`.| 3 |
+| ID | Requirement |
+|---|---|
+| **FR-01** | Managing Editor can trial-edit text directly in the live layout preview and instantly see whether it fits — preview-only, doesn't touch the source file. |
+| **FR-02** | System displays the full page layout (text, photos, illustrations, captions) so the Editor can review it without a printed proof. |
+| **FR-03** | Managing Editor can place a coordinate-pinned annotation on any element and track it as Open/Resolved. |
+| **FR-04** | System blocks chapter approval while any annotation remains Open. |
+
+Full requirement detail, priorities and traceability: [`02_requirements.md`](./docs/02_requirements.md)
 
 ---
 
