@@ -70,8 +70,7 @@ Every round above relied on printed proofs, red-pen annotations, and manual re-t
 | **FR-01** | The system shall let the Managing Editor make a trial edit to text (body copy or captions) directly in the live layout preview and immediately show whether the edited text fits the allotted space. This edit is preview-only — it does not modify the source file; the DTP Specialist applies any accepted change manually. | 1, 2 |
 | **FR-02** | The system shall display the current page layout, including photographs, illustrations and captions, so that the Managing Editor can review their placement, visual balance and interaction with surrounding text before requesting changes from the DTP Specialist. | 2-3 |
 | **FR-03** | The system shall let the Managing Editor place a coordinate-pinned annotation on any text, photograph, illustration or caption to indicate a required correction. | 1–3 |
-| **FR-04** | The system shall let the Managing Editor drop a coordinate-pinned annotation on any text or visual element, with a note describing the required correction. | 1–3 |
-| **FR-05** | The system shall prevent the Managing Editor from approving a chapter when at least one annotation has the status `Open`.| 3 |
+| **FR-04** | The system shall prevent the Managing Editor from approving a chapter when at least one annotation has the status `Open`.| 3 |
 
 ---
 
