@@ -1,7 +1,7 @@
 # Editorial–DTP Revision Workflow
 ### Business Analysis Mini Case Study
 
-`Status: Completed` `Type: Conceptual Case Study` `Domain: Publishing / EdTech` `Methods: BPMN 2.0 / User Stories / Gherkin`
+`Status: In Progress` `Type: Conceptual Case Study` `Domain: Publishing / EdTech` `Methods: BPMN 2.0 / User Stories / Gherkin`
 
 A focused BA case study of a single, well-defined process slice: the revision loop between a Managing Editor and a DTP Specialist while preparing one textbook chapter for focus-testing with teachers.
 
@@ -111,7 +111,7 @@ See full User Stories & Acceptance Criteria and traceability: [`02_requirements.
 ## 📁 Repository Structure
 
 ```
-editorial-dtp-revision-ba/
+digital-editorial-workflow/
 ├── docs/
 │   ├── 01_problem_and_scenario.md   # AS-IS problem, actors and iterative revision scenario
 │   ├── 02_requirements.md           # Functional requirements, business rule, user stories & Gherkin
