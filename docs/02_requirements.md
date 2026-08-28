@@ -6,10 +6,9 @@ This document specifies the conceptual digital solution proposed for the pain po
 
 ## 1. Functional Requirements
 
-> The functional requirements below were derived from the pain points identified in the AS-IS workflow.
-All four functional requirements are considered Must-have requirements for the proposed MVP.
+> The functional requirements below were derived from the pain points identified in the AS-IS workflow. All four are considered in scope for the proposed MVP.
 
-| ID | AS-IS Pain Piont | Functional requirement |
+| ID | AS-IS Pain Point | Functional Requirement |
 |---|---|---|
 | **FR-01** | **🔍 No live text fit-check.** Even a small text correction requires DTP to update the layout before the Managing Editor can verify whether it works. | The system shall allow the Managing Editor to trial-edit text, including body text, headings and captions, directly in the interactive layout preview and immediately show whether the revised text fits the allotted space. |
 | **FR-02** | **🖨️ Paper-based page review.** Reviewing text and visual composition requires repeated printing and physical handoffs between the Managing Editor and DTP Specialist. | The system shall display the complete current page layout, including text, photographs, illustrations and captions, in a shared interactive preview accessible to both the Managing Editor and the DTP Specialist. |
@@ -21,13 +20,13 @@ All four functional requirements are considered Must-have requirements for the p
 ## 2. Business Rules
 
 ### BR-01 — Trial Edit Scope
-The Managing Editor may trial-edit text elements in interactive layout preview solely to evaluate text fit. Layout elements, including photographs and illustrations, cannot be repositioned or resized by the Managing Editor.
+The Managing Editor may trial-edit body text, headings and captions in the interactive preview solely to evaluate text fit. The Managing Editor cannot reposition, resize or otherwise modify layout or visual elements in the preview.
 
 ### BR-02 — Production File Ownership
-Only the DTP Specialist applies accepted text, layout and visual changes to the production source file.
+Only the DTP Specialist applies accepted text, layout and visual changes to the production source file. Changes made in the interactive preview do not modify the production source file.
 
 ### BR-03 — Correction Resolution
-An annotation may be marked as `Resolved` by the Managing Editor only after the requested correction has been verified in the updated layout.
+An annotation is created with the status `Open`. After applying the requested correction to the production source file, the DTP Specialist may change its status to `Resolved`. If the Managing Editor determines during review that further correction is required, the annotation may be reopened.
 
 ---
 
@@ -50,29 +49,35 @@ Feature: Correction Tracking
     And selecting an annotation takes the Managing Editor to its location in the layout
 ```
 
-**Related requirements:** FR-03, FR-04 
+**Related requirements:** BR-03, FR-03, FR-04 
 
 ---
 
-### User Story — US-02: Visual Layout Review
+### User Story — US-02: Handling Annotated Corrections
 
-> **As a** Managing Editor,  
-> **I want** to indicate the exact location of a required correction directly on the page layout,  
-> **so that** the DTP Specialist can clearly identify what needs to be changed without relying on a marked-up printed proof.
+> **As a** DTP Specialist,
+> **I want** to see requested corrections directly within the current page layout, including their exact location and description, 
+> **so that** I can apply them accurately without relying on marked-up printed proofs.
 
 ```gherkin
-Feature: Visual Layout Review
+Feature: Handling Annotated Corrections
 
-  Scenario: Adding an annotation to a visual element
-    Given the Managing Editor is reviewing the current chapter layout
-    When the Managing Editor places an annotation on a photograph
-    And enters a description of the required correction
-    Then the annotation is attached to that specific location
-    And its status is set to "Open"
-    And the DTP Specialist can see the annotation in the shared preview
+  Scenario: Reviewing a requested correction
+    Given the Managing Editor has created an open annotation in the current chapter layout
+    When the DTP Specialist opens the shared interactive preview
+    Then the complete current page layout is displayed
+    And the annotation is visible at the location where the correction is required
+    And the annotation displays the description of the requested correction
+    And the DTP Specialist can navigate to the annotation from the correction list
+
+  Scenario: Completing a requested correction
+    Given the DTP Specialist has applied the requested correction to the production source file
+    When the DTP Specialist marks the annotation as resolved
+    Then the annotation status changes from "Open" to "Resolved"
+    And the updated status is visible to the Managing Editor
 ```
 
-**Related requirements:** FR-03
+**Related requirements:** BR-02, BR-03, FR-02, FR-03, FR-04
 
 ---
 
