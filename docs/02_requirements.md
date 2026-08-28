@@ -4,33 +4,21 @@ This document specifies the conceptual digital solution proposed for the pain po
 
 ---
 
-## 1. Traceability: Pain Points → Requirements
+## 1. Functional Requirements
 
-| Pain point | Addressed by |
-|---|---|
-| No live text fit-check | FR-01 | 
-| Paper-based page review | FR-02 | 
-| Corrections recorded across successive printed proofs | FR-03 | 
-| No consolidated view of outstanding corrections | FR-04 | 
-
-> **Scope note:** Automatic visual comparison between consecutive DTP versions is intentionally outside the scope of this case study. The proposed solution focuses on tracking explicitly raised corrections through digital annotations rather than automatically detecting every change between versions.
-
----
-
-## 2. Functional Requirements
-
+> The functional requirements below were derived from the pain points identified in the AS-IS workflow.
 All four functional requirements are considered Must-have requirements for the proposed MVP.
 
-| ID | Requirement |
+| ID | AS-IS Pain Piont | Functional requirement |
 |---|---|---|
-| **FR-01** | The system shall allow the Managing Editor to trial-edit text, including body copy and captions, directly in the interactive layout preview and immediately show whether the revised text fits the allotted space. The edit is preview-only and does not modify the production source file. |
-| **FR-02** | The system shall display the complete current page layout, including text, photographs, illustrations and captions, so that the Managing Editor can review page composition without requiring a printed proof. |
-| **FR-03** | The system shall allow the Managing Editor to place a coordinate-pinned annotation on any text or visual element, describe the required correction, and track the annotation using `Open` and `Resolved` statuses. |
-| **FR-04** | The system shall provide a consolidated list of annotations for the current chapter, showing their status and allowing the Managing Editor to filter the list by status and navigate directly to the corresponding location in the layout. |
+| **FR-01** | **🔍 No live text fit-check.** Even a small text correction requires DTP to update the layout before the Managing Editor can verify whether it works. | The system shall allow the Managing Editor to trial-edit text, including body text, headings and captions, directly in the interactive layout preview and immediately show whether the revised text fits the allotted space. |
+| **FR-02** | **🖨️ Paper-based page review.** Reviewing text and visual composition requires repeated printing and physical handoffs between the Managing Editor and DTP Specialist. | The system shall display the complete current page layout, including text, photographs, illustrations and captions, in a shared interactive preview accessible to both the Managing Editor and the DTP Specialist. |
+| **FR-03** | **📄 Corrections recorded across successive proofs.** Required changes are distributed across separate marked-up proofs rather than managed as one coherent set of corrections. | The system shall allow the Managing Editor to place a coordinate-pinned annotation on any text or visual element and describe the required correction. Each annotation shall have an `Open` or `Resolved` status and shall be visible to the DTP Specialist in the interactive layout preview. |
+| **FR-04** | **❓ No consolidated view of outstanding corrections.** Determining which corrections have been addressed and which still require attention requires manual comparison of successive proofs. | The system shall provide both the Managing Editor and the DTP Specialist with a consolidated list of annotations for the current chapter, showing their status, allowing filtering by status and providing direct navigation to the corresponding location in the layout. |
 
 ---
 
-## 3. Business Rules
+## 2. Business Rules
 
 ### BR-01 — Trial Edit Scope
 The Managing Editor may trial-edit text elements in interactive layout preview solely to evaluate text fit. Layout elements, including photographs and illustrations, cannot be repositioned or resized by the Managing Editor.
@@ -43,7 +31,7 @@ An annotation may be marked as `Resolved` by the Managing Editor only after the 
 
 ---
 
-## 4. Example User Stories & Acceptance Criteria
+## 3. Example User Stories & Acceptance Criteria
 
 ### User Story — US-01: Tracking Open Corrections
 
@@ -114,7 +102,7 @@ Feature: Text Fit Check
 
 ---
 
-## 5. Requirements Traceability Summary
+## 4. Requirements Traceability Summary
 
 | Pain point | Requirement | User Story / Rule |
 |---|---|---|
