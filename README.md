@@ -13,7 +13,7 @@ Rather than modelling an entire publishing platform, this case study traces one 
 
 This case study focuses only on the DTP layout and revision loop for one textbook chapter. The stages before and after this loop — such as authoring, external consultation, focus-group testing, final revisions and publication — are outside the scope of the analysis.
 
-`Author manuscript` → `External consultation` → `Editorial content review` → **DTP layout & revision loop (this case study)** → `Teacher focus-group testing` → `Revisions from focus-group feedback` → `Author consultation` → `External consultation` → `DTP rework` → `Final version` → `Ministry review` → `Publication`
+`Author manuscript` → `External consultation` → `Editorial content review` → **DTP layout & revision loop (this case study)** → `Teacher-focus testing` → `Revisions from teacher-focus feedback` → `Author consultation` → `External consultation` → `DTP rework` → `Final version` → `Ministry review` → `Publication`
 
 ---
 
@@ -47,7 +47,7 @@ The sequence below illustrates a typical revision path rather than a fixed numbe
 | Initial layout review | The Managing Editor reviews the first typeset version, including text fit and overall page composition, and identifies required corrections. | Managing Editor, DTP Specialist |
 | Visual assets & captions review | Photographs, illustrations and captions are reviewed within the actual page layout. Text and visual issues may overlap with those identified earlier. | Managing Editor, DTP Specialist |
 | Further revision cycles | DTP applies corrections and prepares updated versions. The Managing Editor reviews successive versions until the remaining text, caption and visual issues are resolved. | Managing Editor, DTP Specialist |
-| Sign-off | The Managing Editor confirms that the chapter is ready for focus-testing with teachers. This is not the final publication sign-off. | Managing Editor |
+| Sign-off | The Managing Editor confirms that the chapter is ready for teacher-focus testing with teachers. This is not the final publication sign-off. | Managing Editor |
 
 **Out of scope:** the Author and the subject-matter Reviewer do not participate in this workflow — their input is already finalized before this process begins.
 
@@ -66,7 +66,7 @@ This created several recurring problems:
 
 **The goal is to reduce unnecessary paper-based handoffs and make the revision loop faster, clearer and easier to track.**
 
-The proposed solution targets these problems through a shared digital layout preview that allows the Managing Editor to review page composition, test text fit and track corrections without relying on physical handoffs.
+The proposed solution targets these problems through a interactive layout preview that allows the Managing Editor to review page composition, test text fit and track corrections without relying on physical handoffs.
 
 ---
 
@@ -74,7 +74,7 @@ The proposed solution targets these problems through a shared digital layout pre
 
 **In scope**
 
-- Shared live layout preview for the Managing Editor and DTP Specialist
+- Shared interactive layout preview for the Managing Editor and DTP Specialist
 - Text-only trial editing to check text and caption fit
 - Review of photographs, illustrations and captions within the full page layout
 - Digital annotations with Open / Resolved status
