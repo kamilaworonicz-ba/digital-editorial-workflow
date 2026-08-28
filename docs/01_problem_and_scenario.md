@@ -30,7 +30,7 @@ flowchart LR
     C -- Yes --> D["Mark text, caption or visual corrections"]
     D --> E["DTP Specialist updates source layout"]
     E --> B
-    C -- No --> F["Chapter ready for focus-testing"]
+    C -- No --> F["Chapter ready for teacher focus-testing"]
 
     style D fill:#c0392b,stroke:#333,stroke-width:2px,color:#fff
     style F fill:#2e7d32,stroke:#333,stroke-width:2px,color:#fff
@@ -76,7 +76,7 @@ This cycle continues until the chapter is considered ready for the next stage.
 The Managing Editor confirms that the chapter is sufficiently complete and visually polished to be presented during **teacher focus-testing**.
 
 > [!CAUTION]
-> This is **not** final publication approval. Further changes may still result from focus-group feedback and later stages of the publishing process.
+> This is **not** final publication approval. Further changes may still result from teacher focus-testing feedback and later stages of the publishing process.
 
 ---
 
