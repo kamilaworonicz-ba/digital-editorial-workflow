@@ -36,44 +36,13 @@ flowchart LR
     style F fill:#2e7d32,stroke:#333,stroke-width:2px,color:#fff
 ```
 
-### Process Input
-
-DTP receives the finalized Chapter 8 manuscript after external subject-matter consultation and preliminary editing by the Managing Editor.
-
-The input also includes information about the planned placement of photographs and illustrations. DTP prepares the first typeset version using the textbook's standard page layout.
-
-### 📖 Layout Review
-
-The Managing Editor reviews the typeset chapter in its actual page layout.
-
-Issues that were difficult to predict from the source manuscript may become visible at this stage. For example:
-
-- body text or captions may not fit the available space
-- headings may require shortening
-- text flow may need adjustment after visual elements are placed
-
-> [!IMPORTANT]
-> Required corrections are marked directly on the **printed proof** ✏️📄 and returned to the DTP Specialist.
-
-### Visual Review
-
-Photographs, illustrations and captions are reviewed together with the surrounding text.
-
-The Managing Editor evaluates not only whether the elements fit technically, but also how they work together visually. For example, an image may require repositioning, its colours may conflict with other elements on the page, or a caption may need shortening.
-
-These corrections are also marked on the printed proof and passed back to DTP.
-
-### Iterative Corrections
-
-The DTP Specialist applies the requested changes to the source layout and prepares an updated version.
-
-The Managing Editor reviews the revised layout again. Previously identified issues may require further adjustment, and changes to one element may introduce new text or layout problems elsewhere.
-
-This cycle continues until the chapter is considered ready for the next stage.
-
-### Focus-Testing Readiness
-
-The Managing Editor confirms that the chapter is sufficiently complete and visually polished to be presented during **teacher focus-testing**.
+| Step | What happens | Actors |
+|---|---|---|
+| **1. Process input & first DTP layout** | DTP receives the finalized Chapter 8 manuscript after external subject-matter consultation and preliminary editing by the Managing Editor. The input also includes information about the planned placement of photographs and illustrations. The DTP Specialist prepares the first typeset version using the textbook's standard page layout. | Managing Editor, DTP Specialist |
+| **2. Initial layout review** | The Managing Editor reviews the typeset chapter in its actual page layout. Issues that were difficult to predict from the source manuscript may become visible at this stage: body text or captions may not fit the available space, headings may require shortening, and text flow may need adjustment after visual elements are placed. Required corrections are marked directly on the printed proof and returned to the DTP Specialist. | Managing Editor, DTP Specialist |
+| **3. Visual assets & captions review** | Photographs, illustrations and captions are reviewed together with the surrounding text. The Managing Editor evaluates not only whether these elements fit technically, but also how they work together visually. For example, an image may require repositioning, its colours may conflict with other elements on the page, or a caption may need shortening. These corrections are also marked on the printed proof and passed back to DTP. | Managing Editor, DTP Specialist |
+| **4. Further revision cycles** | The DTP Specialist applies the requested changes to the source layout and prepares an updated version. The Managing Editor reviews the revised layout again. Previously identified issues may require further adjustment, while changes to one element may introduce new text or layout problems elsewhere. The review-and-correction cycle continues until the chapter is considered ready for the next stage. | Managing Editor, DTP Specialist |
+| **5. Teacher-focus testing readiness** | The Managing Editor confirms that the chapter is sufficiently complete and visually polished to be presented during teacher focus-testing. This is not final publication approval: further changes may still result from focus-group feedback and later stages of the publishing process. | Managing Editor |
 
 > [!CAUTION]
 > This is **not** final publication approval. Further changes may still result from teacher focus-testing feedback and later stages of the publishing process.
