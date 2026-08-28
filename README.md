@@ -88,18 +88,6 @@ The proposed solution is specified through functional requirements, business rul
 
 ---
 
-## 📄 Example User Stories & Acceptance Criteria
-
-### User Story — US-01: Tracking Open Corrections
-
-> **As a** Managing Editor,  
-> **I want** to see all corrections raised for the current chapter together with their status,  
-> **so that** I can quickly identify which issues have been addressed by DTP and which still require attention.
-
-See full User Stories & Acceptance Criteria and traceability: [`02_requirements.md`](docs/02_requirements.md)
-
----
-
 ## 📚 Case Study Contents
 
 | Document |	Purpose |
