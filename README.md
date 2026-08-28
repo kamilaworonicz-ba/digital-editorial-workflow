@@ -41,7 +41,7 @@ The case study follows the revision of one textbook chapter from the first DTP l
 
 **First DTP layout → Managing Editor review → corrections by DTP → repeated review cycle → focus-testing readiness**
 
-A detailed AS-IS scenario, including roles, activities and identified pain points, is described in [`01_problem_and_scenario.md`](docs/01_problem_and_scenario.md).
+A detailed AS-IS scenario and identified pain points are described in [`01_problem_and_scenario.md`](docs/01_problem_and_scenario.md).
 
 ---
 
