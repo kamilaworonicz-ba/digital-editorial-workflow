@@ -89,16 +89,10 @@ The proposed solution targets these problems through a shared digital layout pre
 
 ---
 
-## 📋 Functional Requirements
+## 📋 Requirements
 
-| ID | Requirement |
-|---|---|
-| FR-01 | The system shall allow the Managing Editor to trial-edit text directly in the live layout preview and immediately see whether the revised text fits the allotted space. The edit is preview-only and does not modify the source file. |
-| FR-02 | The system shall display the complete current page layout, including text, photographs, illustrations and captions, so that the Managing Editor can review page composition without requiring a printed proof. |
-| FR-03 | The system shall allow the Managing Editor to place a coordinate-pinned annotation on any text or visual element, describe the required correction, and assign the annotation a status of `Open` or `Resolved`. |
-| FR-04 | The system shall provide a consolidated list of annotations for the current chapter, showing their status and allowing the Managing Editor to filter the list by status and navigate directly to the corresponding location in the layout. |
-
-Full requirement detail, priorities and traceability: [`02_requirements.md`](docs/02_requirements.md)
+The proposed solution is specified through functional requirements, business rules, user stories and acceptance criteria. Full specification and traceability:
+➡️ [`02_requirements.md`](docs/02_requirements.md) 
 
 ---
 
