@@ -48,9 +48,9 @@ The Managing Editor reviews the typeset chapter in its actual page layout.
 
 Issues that were difficult to predict from the source manuscript may become visible at this stage. For example:
 
-- [ ] body text or captions may not fit the available space
-- [ ] headings may require shortening
-- [ ] text flow may need adjustment after visual elements are placed
+- body text or captions may not fit the available space
+- headings may require shortening
+- text flow may need adjustment after visual elements are placed
 
 > [!IMPORTANT]
 > Required corrections are marked directly on the **printed proof** ✏️📄 and returned to the DTP Specialist.
@@ -82,7 +82,7 @@ The Managing Editor confirms that the chapter is sufficiently complete and visua
 
 ## 3. Pain Points Summary
 
-| Pain point | Business impact |
+| Pain point | Operational impact |
 |---|---|
 | 🔍 **No live text fit-check** | Even a small text correction requires DTP to update the layout before the Managing Editor can verify whether it works |
 | 🖨️ **Paper-based page review** | Reviewing text and visual composition requires repeated printing and physical handoffs |
