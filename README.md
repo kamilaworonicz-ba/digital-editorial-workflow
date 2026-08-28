@@ -75,7 +75,7 @@ The proposed solution targets these problems through a interactive layout previe
 **In scope**
 
 - Shared interactive layout preview for the Managing Editor and DTP Specialist
-- Text-only trial editing to check text and caption fit
+- Text-only trial editing for body text, headings and captions
 - Review of photographs, illustrations and captions within the full page layout
 - Digital annotations with Open / Resolved status
 - Consolidated tracking of outstanding corrections with direct navigation to their location
@@ -108,19 +108,13 @@ See full User Stories & Acceptance Criteria and traceability: [`02_requirements.
 
 ---
 
-## 📁 Repository Structure
+## 📚 Case Study Contents
 
-```
-digital-editorial-workflow/
-├── docs/
-│   ├── 01_problem_and_scenario.md   # AS-IS problem, actors and iterative revision scenario
-│   ├── 02_requirements.md           # Functional requirements, business rule, user stories & Gherkin
-│   └── 03_process_diagrams.md       # AS-IS and TO-BE process analysis
-├── diagrams/
-│   ├── bpmn_as_is.png
-│   └── bpmn_to_be.png
-└── README.md
-```
+| Document |	Purpose |
+|---|---|
+| [`01_problem_and_scenario.md`](docs/01_problem_and_scenario.md) |	AS-IS problem, scenario and pain points |
+| [`02_requirements.md`](docs/02_requirements.md) | Functional requirements, business rules, user stories, acceptance criteria and traceability |
+| [`03_process_diagrams.md`](03_process_diagrams.md) | AS-IS and proposed TO-BE BPMN process models |
 
 ---
 
