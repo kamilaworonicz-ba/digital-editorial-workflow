@@ -35,21 +35,13 @@ This case study focuses only on the DTP layout and revision loop for one textboo
 
 ---
 
-## 🧩 The Scenario
+## 🧩 Illustrative Scenario
 
-Illustrative scenario: Chapter 8 → first DTP layout → iterative review and corrections → sign-off.
+The case study follows the revision of one textbook chapter from the first DTP layout through iterative review and correction cycles to readiness for teacher focus-testing.
 
-The sequence below illustrates a typical revision path rather than a fixed number of rounds. In practice, text, caption and visual issues could overlap and reappear across multiple iterations.
+**First DTP layout → Managing Editor review → corrections by DTP → repeated review cycle → focus-testing readiness**
 
-| Step | What happens | Actors |
-|---|---|---|
-| Input | Author's manuscript, finalized after external subject-matter consultations and preliminary editing by the Managing Editor, is sent to DTP for first typesetting. | Managing Editor, DTP Specialist |
-| Initial layout review | The Managing Editor reviews the first typeset version, including text fit and overall page composition, and identifies required corrections. | Managing Editor, DTP Specialist |
-| Visual assets & captions review | Photographs, illustrations and captions are reviewed within the actual page layout. Text and visual issues may overlap with those identified earlier. | Managing Editor, DTP Specialist |
-| Further revision cycles | DTP applies corrections and prepares updated versions. The Managing Editor reviews successive versions until the remaining text, caption and visual issues are resolved. | Managing Editor, DTP Specialist |
-| Sign-off | The Managing Editor confirms that the chapter is ready for teacher-focus testing with teachers. This is not the final publication sign-off. | Managing Editor |
-
-**Out of scope:** the Author and the subject-matter Reviewer do not participate in this workflow — their input is already finalized before this process begins.
+A detailed AS-IS scenario, including roles, activities and identified pain points, is described in [`01_problem_and_scenario.md`](docs/01_problem_and_scenario.md).
 
 ---
 
