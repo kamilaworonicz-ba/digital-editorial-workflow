@@ -6,12 +6,12 @@ This document specifies the conceptual digital solution proposed for the pain po
 
 ## 1. Traceability: Pain Points → Requirements
 
-| Pain point | Addressed by | Coverage |
+| Pain point | Addressed by |
 |---|---|---|
-| No live text fit-check | FR-01 | Full |
-| Paper-based page review | FR-02 | Full |
-| Corrections recorded across successive printed proofs | FR-03 | Full |
-| No consolidated view of outstanding corrections | FR-04 | Full |
+| No live text fit-check | FR-01 | 
+| Paper-based page review | FR-02 | 
+| Corrections recorded across successive printed proofs | FR-03 | 
+| No consolidated view of outstanding corrections | FR-04 | 
 
 > **Scope note:** Automatic visual comparison between consecutive DTP versions is intentionally outside the scope of this case study. The proposed solution focuses on tracking explicitly raised corrections through digital annotations rather than automatically detecting every change between versions.
 
@@ -19,28 +19,27 @@ This document specifies the conceptual digital solution proposed for the pain po
 
 ## 2. Functional Requirements
 
-| ID | Requirement | Priority |
+All four functional requirements are considered Must-have requirements for the proposed MVP.
+
+| ID | Requirement |
 |---|---|---|
-| **FR-01** | The system shall allow the Managing Editor to trial-edit text, including body copy and captions, directly in the live layout preview and immediately show whether the revised text fits the allotted space. The edit is preview-only and does not modify the production source file. | High |
-| **FR-02** | The system shall display the complete current page layout, including text, photographs, illustrations and captions, so that the Managing Editor can review page composition without requiring a printed proof. | High |
-| **FR-03** | The system shall allow the Managing Editor to place a coordinate-pinned annotation on any text or visual element, describe the required correction, and track the annotation using `Open` and `Resolved` statuses. | High |
-| **FR-04** | The system shall provide a consolidated list of annotations for the current chapter, showing their status and allowing the Managing Editor to filter the list by status and navigate directly to the corresponding location in the layout. | High |
+| **FR-01** | The system shall allow the Managing Editor to trial-edit text, including body copy and captions, directly in the interactive layout preview and immediately show whether the revised text fits the allotted space. The edit is preview-only and does not modify the production source file. |
+| **FR-02** | The system shall display the complete current page layout, including text, photographs, illustrations and captions, so that the Managing Editor can review page composition without requiring a printed proof. |
+| **FR-03** | The system shall allow the Managing Editor to place a coordinate-pinned annotation on any text or visual element, describe the required correction, and track the annotation using `Open` and `Resolved` statuses. |
+| **FR-04** | The system shall provide a consolidated list of annotations for the current chapter, showing their status and allowing the Managing Editor to filter the list by status and navigate directly to the corresponding location in the layout. |
 
 ---
 
 ## 3. Business Rules
 
 ### BR-01 — Trial Edit Scope
-
-The Managing Editor may edit text in the live preview only for the purpose of checking whether it fits the assigned layout space.
-
-The trial edit does not constitute a change to the production file.
+The Managing Editor may trial-edit text elements in interactive layout preview solely to evaluate text fit. Layout elements, including photographs and illustrations, cannot be repositioned or resized by the Managing Editor.
 
 ### BR-02 — Production File Ownership
+Only the DTP Specialist applies accepted text, layout and visual changes to the production source file.
 
-Trial edits made in the live preview do not modify the production source file.
-
-All accepted text changes, layout changes, image placement, resizing and formatting are applied to the source file by the DTP Specialist.
+### BR-03 — Correction Resolution
+An annotation may be marked as `Resolved` by the Managing Editor only after the requested correction has been verified in the updated layout.
 
 ---
 
@@ -63,7 +62,7 @@ Feature: Correction Tracking
     And selecting an annotation takes the Managing Editor to its location in the layout
 ```
 
-**Traceability:** FR-03 → FR-04 → US-01
+**Related requirements:** FR-03, FR-04 
 
 ---
 
@@ -85,14 +84,14 @@ Feature: Visual Layout Review
     And the DTP Specialist can see the annotation in the shared preview
 ```
 
-**Traceability:** FR-03 → US-02
+**Related requirements:** FR-03
 
 ---
 
 ### User Story — US-03: Text Fit Check
 
 > **As a** Managing Editor,  
-> **I want** to trial-edit text directly in the live layout preview,  
+> **I want** to trial-edit text directly in the interactive layout preview,  
 > **so that** I can check whether a proposed wording change fits before asking the DTP Specialist to apply it to the production file.
 
 ```gherkin
@@ -100,18 +99,18 @@ Feature: Text Fit Check
 
   Scenario: Checking whether revised text fits
     Given a text element exceeds its allotted layout space
-    When the Managing Editor edits the text in the live preview
+    When the Managing Editor edits the text in the interactive layout preview
     Then the system immediately shows whether the revised text fits
     And the edit remains preview-only
     And the production source file remains unchanged
 
   Scenario: Attempting to modify the layout
-    Given the Managing Editor is using the live layout preview
+    Given the Managing Editor is using the interactive layout preview
     When the Managing Editor attempts to move or resize an image
     Then the action is not available
 ```
 
-**Traceability:** BR-01 → BR-02 → FR-01 → US-03
+**Related requirements:** BR-01, BR-02, FR-01
 
 ---
 
