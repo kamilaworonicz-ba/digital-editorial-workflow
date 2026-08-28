@@ -7,7 +7,7 @@ This document specifies the conceptual digital solution proposed for the pain po
 ## 1. Traceability: Pain Points → Requirements
 
 | Pain point | Addressed by |
-|---|---|---|
+|---|---|
 | No live text fit-check | FR-01 | 
 | Paper-based page review | FR-02 | 
 | Corrections recorded across successive printed proofs | FR-03 | 
