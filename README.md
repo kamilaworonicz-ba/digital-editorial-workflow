@@ -9,7 +9,7 @@ Rather than modelling an entire publishing platform, this case study traces one 
 
 ---
 
-## 🗺️ Where This Fits in the Wider Process
+## 1. Where This Fits in the Wider Process
 
 This case study focuses only on the DTP layout and revision loop for one textbook chapter. The stages before and after this loop — such as authoring, external consultation, focus-group testing, final revisions and publication — are outside the scope of the analysis.
 
@@ -17,7 +17,7 @@ This case study focuses only on the DTP layout and revision loop for one textboo
 
 ---
 
-## 👥 Actors
+## 2. Actors
 
 | Actor | Involved in this workflow? | Role |
 |---|---|---|
@@ -28,14 +28,14 @@ This case study focuses only on the DTP layout and revision loop for one textboo
 
 ---
 
-## ℹ️ Context & Disclaimer
+## 3. Context & Disclaimer
 
 - **Domain background:** The process, actors and pain points described here come from real professional experience managing editorial teams in educational publishing. In practice, this revision loop was handled primarily on paper — printed layouts were marked up in red pen &#128397; and physically passed back to DTP for correction.
 - **Portfolio nature:** The digital tool proposed below — including its requirements, user stories and business rule — is a conceptual solution created independently for this portfolio. It was never implemented at the company in question. Its purpose is to demonstrate how a Business Analyst could specify a targeted digital improvement for this particular workflow.
 
 ---
 
-## 🧩 Illustrative Scenario
+## 4. Illustrative Scenario
 
 The case study follows the revision of one textbook chapter from the first DTP layout through iterative review and correction cycles to readiness for teacher focus-testing.
 
@@ -45,7 +45,7 @@ A detailed AS-IS scenario and identified pain points are described in [`01_probl
 
 ---
 
-## 🎯 Problem & Goal
+## 4. Problem & Goal
 
 Each revision cycle relied on printed proofs, red-pen annotations and manual application of corrections.
 
@@ -62,7 +62,7 @@ The proposed solution targets these problems through a interactive layout previe
 
 ---
 
-## 📊 Success Measures & Illustrative NFRs
+## 5. Success Measures & Illustrative NFRs
 
 ### Success Measures
 
@@ -82,7 +82,7 @@ The proposed solution targets these problems through a interactive layout previe
 
 ---
 
-## 📐 Scope
+## 6. Scope
 
 **In scope**
 
@@ -101,14 +101,14 @@ The proposed solution targets these problems through a interactive layout previe
 
 ---
 
-## 📋 Requirements
+## 7. Requirements
 
 The proposed solution is specified through functional requirements, business rules, user stories and acceptance criteria. Full specification and traceability:
 ➡️ [`02_requirements.md`](docs/02_requirements.md) 
 
 ---
 
-## 📚 Case Study Contents
+## 8. Case Study Contents
 
 | Document |	Purpose |
 |---|---|
