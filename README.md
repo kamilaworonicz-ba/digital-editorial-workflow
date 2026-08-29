@@ -117,6 +117,17 @@ The proposed solution is specified through functional requirements, business rul
 | [`03_process_diagrams.md`](03_process_diagrams.md) | AS-IS and proposed TO-BE BPMN process models |
 
 ---
+## 💡 Skills Demonstrated
+
+`Requirements analysis and functional requirements definition`
+`Business rules identification`
+`User Stories and Acceptance Criteria in Gherkin`
+`Requirements traceability`
+`AS-IS / TO-BE process analysis and BPMN modelling`
+`Pain-point identification and process improvement`
+`Scope definition and MVP thinking`
+
+---
 
 ## 📬 Contact
 
