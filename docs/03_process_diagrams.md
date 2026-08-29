@@ -12,7 +12,7 @@ The AS-IS model shows the current paper-based revision workflow. Printed proofs 
 
 ![AS-IS chapter revision process](../process_diagram/BPMN_AS-IS_editorial.svg)
 
-**Legend:** Highlighted activities are eliminated in the proposed TO-BE process. Other activities may remain but be performed digitally.
+>**Legend:** Highlighted activities are eliminated in the proposed TO-BE process. Other activities may remain but be performed digitally.
 
 [View AS-IS BPMN source file](../process_diagram/BPMN_AS-IS_editorial.bpmn)
 
