@@ -45,7 +45,7 @@ A detailed AS-IS scenario and identified pain points are described in [`01_probl
 
 ---
 
-## 4. Problem & Goal
+## 5. Problem & Goal
 
 Each revision cycle relied on printed proofs, red-pen annotations and manual application of corrections.
 
@@ -62,7 +62,7 @@ The proposed solution targets these problems through a interactive layout previe
 
 ---
 
-## 5. Success Measures & Illustrative NFRs
+## 6. Success Measures & Illustrative NFRs
 
 ### Success Measures
 
@@ -82,7 +82,7 @@ The proposed solution targets these problems through a interactive layout previe
 
 ---
 
-## 6. Scope
+## 7. Scope
 
 **In scope**
 
@@ -101,14 +101,14 @@ The proposed solution targets these problems through a interactive layout previe
 
 ---
 
-## 7. Requirements
+## 8. Requirements
 
 The proposed solution is specified through functional requirements, business rules, user stories and acceptance criteria. Full specification and traceability:
 ➡️ [`02_requirements.md`](docs/02_requirements.md) 
 
 ---
 
-## 8. Case Study Contents
+## 9. Case Study Contents
 
 | Document |	Purpose |
 |---|---|
