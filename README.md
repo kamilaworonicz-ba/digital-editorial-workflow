@@ -62,6 +62,26 @@ The proposed solution targets these problems through a interactive layout previe
 
 ---
 
+## 📊 Success Measures & Illustrative NFRs
+
+### Success Measures
+
+- **Revision cycle time:** Within two months of introducing the proposed tool, the time from the first DTP layout of a chapter to focus-testing readiness should not exceed two weeks.
+- **Printed proof reduction:** Within two months of introducing the proposed tool, the number of pages printed during the revision of a 20-page chapter should decrease from approximately 200 pages to no more than 40 pages *(approximately an 80% reduction)*.
+- **Digital correction tracking:** Within two months of introducing the proposed tool, at least 90% of corrections exchanged between the Managing Editor and the DTP Specialist should be recorded and tracked through the shared interactive preview rather than through printed proofs.
+
+### Illustrative NFRs
+
+>The NFRs below are hypothetical examples created for this portfolio case study. They are not derived from measured production-system constraints and are included to demonstrate how non-functional requirements could be defined for the proposed solution.
+
+| ID | Category | Illustrative NFR |
+|---|---|---|
+| NFR-01|	Performance	| The interactive layout preview should load within 3 seconds under normal operating conditions. |
+| NFR-02 | Performance | Creating or updating an annotation should be reflected in the shared preview within 2 seconds. |
+| NFR-03 | Usability | A Managing Editor or DTP Specialist should be able to locate an open correction and navigate to its position in the layout within three user interactions from the correction list. |
+
+---
+
 ## 📐 Scope
 
 **In scope**
@@ -101,7 +121,7 @@ The proposed solution is specified through functional requirements, business rul
 ## 📬 Contact
 
 **Kamila Woronicz**
-Business Analyst | Product Manager (career transition)
+Business Analyst | Product Manager *(career transition)*
 
 - Email: kamila.woronicz@gmail.com
 - Location: Gdańsk, Poland
