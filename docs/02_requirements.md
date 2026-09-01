@@ -1,10 +1,10 @@
-# Requirements & Specification
+# 2. Requirements & Specification
 
 This document specifies the conceptual digital solution proposed for the pain points identified in [`01_problem_and_scenario.md`](./01_problem_and_scenario.md).
 
 ---
 
-## 1. Functional Requirements
+## 2. 1. Functional Requirements
 
 > The functional requirements below were derived from the pain points identified in the AS-IS workflow. All four are considered in scope for the proposed MVP.
 
@@ -17,7 +17,7 @@ This document specifies the conceptual digital solution proposed for the pain po
 
 ---
 
-## 2. Business Rules
+## 2.2. Business Rules
 
 ### BR-01 — Trial Edit Scope
 The Managing Editor may trial-edit body text, headings and captions in the interactive preview solely to evaluate text fit. The Managing Editor cannot reposition, resize or otherwise modify layout or visual elements in the preview.
@@ -30,7 +30,7 @@ An annotation is created with the status `Open`. After applying the requested co
 
 ---
 
-## 3. Example User Stories & Acceptance Criteria
+## 2.3. Example User Stories & Acceptance Criteria
 
 ### User Story — US-01: Tracking Open Corrections
 
@@ -107,7 +107,7 @@ Feature: Text Fit Check
 
 ---
 
-## 4. Requirements Traceability Summary
+## 2.4. Requirements Traceability Summary
 
 | Pain point | Requirement | User Story / Rule |
 |---|---|---|
