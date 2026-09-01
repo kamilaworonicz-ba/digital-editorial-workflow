@@ -1,6 +1,6 @@
-# Problem & Scenario: Editorial–DTP Revision Workflow
+# 1. Problem & Scenario: Editorial–DTP Revision Workflow
 
-## 1. AS-IS Problem
+## 1.1. AS-IS Problem
 
 Once a manuscript was typeset for the first time, it entered an iterative revision loop between the **Managing Editor** and the **DTP Specialist**.
 
@@ -18,7 +18,7 @@ The scenario below illustrates how these problems appeared during the preparatio
 
 ---
 
-## 2. Illustrative Scenario: Chapter 8
+## 1.2. Illustrative Scenario: Chapter 8
 
 > [!NOTE]
 > The sequence below illustrates a typical revision path rather than a fixed number of rounds. Text, caption and visual issues could overlap and reappear across multiple iterations.
@@ -49,7 +49,7 @@ flowchart LR
 
 ---
 
-## 3. Pain Points Summary
+## 1.3. Pain Points Summary
 
 | Pain point | Operational impact |
 |---|---|
