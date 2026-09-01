@@ -1,4 +1,4 @@
-# Process Diagrams
+# 3. Process Diagrams
 
 This document compares the current AS-IS chapter revision workflow with the proposed TO-BE process supported by a shared interactive layout preview.
 
@@ -6,7 +6,7 @@ The overall revision cycle remains unchanged: the Managing Editor reviews the la
 
 ---
 
-## 1. AS-IS Process
+## 3.1. AS-IS Process
 
 The AS-IS model shows the current paper-based revision workflow. Printed proofs are used to review the layout, corrections are marked and numbered manually, and the marked-up proof is physically handed over to the DTP Specialist.
 
@@ -18,7 +18,7 @@ The AS-IS model shows the current paper-based revision workflow. Printed proofs 
 
 ---
 
-## 2. TO-BE Process
+## 3.2. TO-BE Process
 
 The TO-BE model preserves the existing revision loop while replacing printed proofs and physical handoffs with a shared interactive layout preview.
 
@@ -30,7 +30,7 @@ Required corrections are recorded directly in the preview and are immediately av
 
 ---
 
-## 3. AS-IS vs TO-BE — Key Process Changes
+## 3.3. AS-IS vs TO-BE — Key Process Changes
 
 | AS-IS Limitation | TO-BE Change |
 |---|---|
@@ -43,7 +43,7 @@ Required corrections are recorded directly in the preview and are immediately av
 
 ---
 
-## 4. Expected Impact
+## 3.4. Expected Impact
 
 The proposed TO-BE process is intended to:
 
