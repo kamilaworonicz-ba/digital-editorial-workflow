@@ -22,7 +22,7 @@ The AS-IS model shows the current paper-based revision workflow. Printed proofs 
 
 The TO-BE model preserves the existing revision loop while replacing printed proofs and physical handoffs with a shared interactive layout preview.
 
-Required corrections are recorded directly in the preview and are immediately available to the DTP Specialist. New correction annotations are automatically assigned the `Open` status. After applying the requested correction to the production layout, the DTP Specialist marks the correction as `Resolved`. A resolved correction may be reopened if further changes are required during the next review.
+Required corrections are recorded directly in the preview and are available to the DTP Specialist. New correction annotations are automatically assigned the `Open` status. After applying the requested correction to the production layout, the DTP Specialist marks the correction as `Resolved`. A resolved correction may be reopened if further changes are required during the next review.
 
 ![TO-BE chapter revision process](../process_diagram/BPMN_TO-BE_editorial.svg)
 
