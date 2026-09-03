@@ -10,13 +10,64 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
 
 > The functional requirements below were derived from the pain points identified in the AS-IS workflow. All five are considered in scope for the proposed MVP.
 
-| ID | AS-IS Pain Point | Functional Requirement |
-|---|---|---|
-| **FR-01** | **🔍 No live text fit-check.** Even a small text correction requires DTP to update the layout before the Managing Editor can verify whether it works. | The system shall allow the Managing Editor to trial-edit text, including body text, headings and captions, directly in the interactive layout preview, immediately show whether the revised text fits the allotted space, and submit the proposed text as a requested correction. |
-| **FR-02** | **🖨️ Paper-based page review.** Reviewing text and visual composition requires repeated printing and physical handoffs between the Managing Editor and DTP Specialist. | The system shall display the complete current page layout, including text, photographs, illustrations and captions, in a shared interactive preview accessible to both the Managing Editor and the DTP Specialist. |
-| **FR-03** | **📄 Corrections recorded across successive proofs.** Required changes are distributed across separate marked-up proofs rather than managed as one coherent set of corrections. | FR-03: The system shall allow the Managing Editor to create an annotation linked to a text or visual element, or to a specific page location, and describe the required correction. For submitted trial-edited text, the system shall automatically create an annotation containing the proposed replacement text. Each annotation shall have an `Open` or `Resolved` status and be visible to the DTP Specialist. |
-| **FR-04** | **❓ No consolidated view of outstanding corrections.** Determining which corrections have been addressed and which still require attention requires manual comparison of successive proofs. | The system shall provide both the Managing Editor and the DTP Specialist with a consolidated list of annotations for the current chapter, showing their status, allowing filtering by status and providing direct navigation to the corresponding location in the layout. |
-| **FR-05** | **🔄 Layout Preview Update.** Successive layout versions. Corrections must remain traceable as DTP produces updated versions of the chapter layout. | The system shall allow the DTP Specialist to update the interactive preview with the latest version of the production layout while preserving existing annotations, their statuses and their association with the relevant content.|
+<table>
+  <tr>
+    <th>ID</th>
+    <th>AS-IS Pain Point</th>
+    <th>Functional Requirement</th>
+  </tr>
+
+  <tr>
+    <td><strong>FR-01</strong></td>
+    <td>
+      🔍 <strong>No live text fit-check.</strong>
+      Even a small text correction requires DTP to update the layout before the Managing Editor can verify whether it works.
+    </td>
+    <td>
+      The system shall allow the Managing Editor to trial-edit text, including body text, headings and captions, directly in the interactive layout preview, immediately show whether the revised text fits the allotted space, and submit the proposed text as a requested correction.
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>FR-02</strong></td>
+    <td>
+      🖨️ <strong>Paper-based page review.</strong>
+      Reviewing text and visual composition requires repeated printing and physical handoffs between the Managing Editor and DTP Specialist.
+    </td>
+    <td>
+      The system shall display the complete current page layout, including text, photographs, illustrations and captions, in a shared interactive preview accessible to both the Managing Editor and the DTP Specialist.
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>FR-03</strong></td>
+    <td rowspan="2">
+      📄 <strong>Corrections recorded across successive proofs.</strong>
+      Required changes are distributed across separate marked-up proofs rather than managed as one coherent set of corrections.
+    </td>
+    <td>
+      The system shall allow the Managing Editor to create an annotation linked to a text or visual element, or to a specific page location, and describe the required correction. For submitted trial-edited text, the system shall automatically create an annotation containing the proposed replacement text. Each annotation shall have an <code>Open</code> or <code>Resolved</code> status and be visible to the DTP Specialist.
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>FR-05</strong></td>
+    <td>
+      The system shall allow the DTP Specialist to update the interactive preview with the latest version of the production layout while preserving existing annotations, their statuses and their association with the relevant content.
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>FR-04</strong></td>
+    <td>
+      ❓ <strong>No consolidated view of outstanding corrections.</strong>
+      Determining which corrections have been addressed and which still require attention requires manual comparison of successive proofs.
+    </td>
+    <td>
+      The system shall provide both the Managing Editor and the DTP Specialist with a consolidated list of annotations for the current chapter, showing their status, allowing filtering by status and providing direct navigation to the corresponding location in the layout.
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -158,13 +209,42 @@ Scenario: Annotation target no longer exists
 
 ## 2.4. Requirements Traceability Summary
 
-| Pain point | Requirement | User Story / Rule |
-|---|---|---|
-| No live text fit-check | FR-01 | BR-01, BR-02, US-03 |
-| Paper-based page review | FR-02 | US-02 |
-| Corrections recorded across successive printed proofs | FR-03 | US-01, US-02 |
-| No consolidated view of outstanding corrections | FR-04 | US-01 |
-| Successive layout versions | FR-05 | BR-04, US-04 |
+<table>
+  <tr>
+    <th>Pain point</th>
+    <th>Requirement</th>
+    <th>User Story / Rule</th>
+  </tr>
+
+  <tr>
+    <td>🔍 <strong>No live text fit-check</strong></td>
+    <td>FR-01</td>
+    <td>BR-01, BR-02, US-03</td>
+  </tr>
+
+  <tr>
+    <td>🖨️ <strong>Paper-based page review</strong></td>
+    <td>FR-02</td>
+    <td>US-02</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">📄 <strong>Corrections recorded across successive proofs</strong></td>
+    <td>FR-03</td>
+    <td>US-01, US-02</td>
+  </tr>
+
+  <tr>
+    <td>FR-05</td>
+    <td>BR-04, US-04</td>
+  </tr>
+
+  <tr>
+    <td>❓ <strong>No consolidated view of outstanding corrections</strong></td>
+    <td>FR-04</td>
+    <td>US-01</td>
+  </tr>
+</table>
 
 ---
 
