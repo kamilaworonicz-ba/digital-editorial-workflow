@@ -2,31 +2,40 @@
 
 This document specifies the conceptual digital solution proposed for the pain points identified in [`01_problem_and_scenario.md`](./01_problem_and_scenario.md).
 
+The proposed solution is an **Interactive Layout Preview** — a shared digital view of the current page layout that allows both roles to review composition and track corrections, while allowing the Managing Editor to trial-edit text before requesting a change.
+
 ---
 
 ## 2. 1. Functional Requirements
 
-> The functional requirements below were derived from the pain points identified in the AS-IS workflow. All four are considered in scope for the proposed MVP.
+> The functional requirements below were derived from the pain points identified in the AS-IS workflow. All five are considered in scope for the proposed MVP.
 
 | ID | AS-IS Pain Point | Functional Requirement |
 |---|---|---|
-| **FR-01** | **🔍 No live text fit-check.** Even a small text correction requires DTP to update the layout before the Managing Editor can verify whether it works. | The system shall allow the Managing Editor to trial-edit text, including body text, headings and captions, directly in the interactive layout preview and immediately show whether the revised text fits the allotted space. |
+| **FR-01** | **🔍 No live text fit-check.** Even a small text correction requires DTP to update the layout before the Managing Editor can verify whether it works. | The system shall allow the Managing Editor to trial-edit text, including body text, headings and captions, directly in the interactive layout preview, immediately show whether the revised text fits the allotted space, and submit the proposed text as a requested correction. |
 | **FR-02** | **🖨️ Paper-based page review.** Reviewing text and visual composition requires repeated printing and physical handoffs between the Managing Editor and DTP Specialist. | The system shall display the complete current page layout, including text, photographs, illustrations and captions, in a shared interactive preview accessible to both the Managing Editor and the DTP Specialist. |
-| **FR-03** | **📄 Corrections recorded across successive proofs.** Required changes are distributed across separate marked-up proofs rather than managed as one coherent set of corrections. | The system shall allow the Managing Editor to place a coordinate-pinned annotation on any text or visual element and describe the required correction. Each annotation shall have an `Open` or `Resolved` status and shall be visible to the DTP Specialist in the interactive layout preview. |
+| **FR-03** | **📄 Corrections recorded across successive proofs.** Required changes are distributed across separate marked-up proofs rather than managed as one coherent set of corrections. | FR-03: The system shall allow the Managing Editor to create an annotation linked to a text or visual element, or to a specific page location, and describe the required correction. For submitted trial-edited text, the system shall automatically create an annotation containing the proposed replacement text. Each annotation shall have an `Open` or `Resolved` status and be visible to the DTP Specialist. |
 | **FR-04** | **❓ No consolidated view of outstanding corrections.** Determining which corrections have been addressed and which still require attention requires manual comparison of successive proofs. | The system shall provide both the Managing Editor and the DTP Specialist with a consolidated list of annotations for the current chapter, showing their status, allowing filtering by status and providing direct navigation to the corresponding location in the layout. |
+| **FR-05** | **🔄 Layout Preview Update.** Successive layout versions. Corrections must remain traceable as DTP produces updated versions of the chapter layout. | The system shall allow the DTP Specialist to update the interactive preview with the latest version of the production layout while preserving existing annotations, their statuses and their association with the relevant content.|
 
 ---
 
 ## 2.2. Business Rules
 
 ### BR-01 — Trial Edit Scope
-The Managing Editor may trial-edit body text, headings and captions in the interactive preview solely to evaluate text fit. The Managing Editor cannot reposition, resize or otherwise modify layout or visual elements in the preview.
+
+The Managing Editor may trial-edit body text, headings and captions in the interactive preview solely to evaluate text fit. Trial edits are visible only to the Managing Editor and are not shared with the DTP Specialist unless submitted as a requested correction. The Managing Editor cannot reposition, resize or otherwise modify layout or visual elements in the preview.
 
 ### BR-02 — Production File Ownership
 Only the DTP Specialist applies accepted text, layout and visual changes to the production source file. Changes made in the interactive preview do not modify the production source file.
 
 ### BR-03 — Correction Resolution
 An annotation is created with the status `Open`. After applying the requested correction to the production source file, the DTP Specialist may change its status to `Resolved`. If the Managing Editor determines during review that further correction is required, the annotation may be reopened.
+
+### BR-04 — Annotation Anchoring
+An annotation linked to a text or visual element remains associated with that element when the layout is updated, even if the element changes position or moves to another page.
+An annotation placed at page level rather than on a specific element remains associated with the same section and, where possible, the same relative page within that section.
+If the original annotation target is no longer available after a layout update, the annotation remains open and is flagged for reassignment by the Managing Editor.
 
 ---
 
@@ -41,12 +50,12 @@ An annotation is created with the status `Open`. After applying the requested co
 ```gherkin
 Feature: Correction Tracking
 
-  Scenario: Reviewing outstanding corrections
-    Given the chapter contains open and resolved annotations
-    When the Managing Editor opens the correction list
-    Then each annotation is displayed with its current status
-    And the Managing Editor can filter the list to show only open annotations
-    And selecting an annotation takes the Managing Editor to its location in the layout
+Scenario: Reviewing outstanding corrections
+  Given the chapter contains open and resolved annotations
+  When the Managing Editor opens the correction list
+  Then each annotation is displayed with its current status
+  And the Managing Editor can filter the list to show only open annotations
+  And selecting an annotation takes the Managing Editor to its location in the layout
 ```
 
 **Related requirements:** BR-03, FR-03, FR-04 
@@ -62,19 +71,19 @@ Feature: Correction Tracking
 ```gherkin
 Feature: Handling Annotated Corrections
 
-  Scenario: Reviewing a requested correction
-    Given the Managing Editor has created an open annotation in the current chapter layout
-    When the DTP Specialist opens the shared interactive preview
-    Then the complete current page layout is displayed
-    And the annotation is visible at the location where the correction is required
-    And the annotation displays the description of the requested correction
-    And the DTP Specialist can navigate to the annotation from the correction list
+Scenario: Reviewing a requested correction
+  Given the Managing Editor has created an open annotation in the current chapter layout
+  When the DTP Specialist opens the shared interactive preview
+  Then the complete current page layout is displayed
+  And the annotation is visible at the location where the correction is required
+  And the annotation displays the description of the requested correction
+  And the DTP Specialist can navigate to the annotation from the correction list
 
-  Scenario: Completing a requested correction
-    Given the DTP Specialist has applied the requested correction to the production source file
-    When the DTP Specialist marks the annotation as resolved
-    Then the annotation status changes from "Open" to "Resolved"
-    And the updated status is visible to the Managing Editor
+Scenario: Completing a requested correction
+  Given the DTP Specialist has applied the requested correction to the production source file
+  When the DTP Specialist marks the annotation as resolved
+  Then the annotation status changes from "Open" to "Resolved"
+  And the updated status is visible to the Managing Editor
 ```
 
 **Related requirements:** BR-02, BR-03, FR-02, FR-03, FR-04
@@ -90,20 +99,62 @@ Feature: Handling Annotated Corrections
 ```gherkin
 Feature: Text Fit Check
 
-  Scenario: Checking whether revised text fits
-    Given a text element exceeds its allotted layout space
-    When the Managing Editor edits the text in the interactive layout preview
-    Then the system immediately shows whether the revised text fits
-    And the edit remains preview-only
-    And the production source file remains unchanged
+Scenario: Checking whether revised text fits
+  Given the Managing Editor is reviewing a text element in the interactive layout preview
+  When the Managing Editor edits the text
+  Then the system immediately shows whether the revised text fits
+  And the trial edit is visible only to the Managing Editor
+  And the production source file remains unchanged
 
-  Scenario: Attempting to modify the layout
-    Given the Managing Editor is using the interactive layout preview
-    When the Managing Editor attempts to move or resize an image
-    Then the action is not available
+Scenario: Attempting to modify the layout
+  Given the Managing Editor is using the interactive layout preview
+  When the Managing Editor attempts to move or resize an image
+  Then the action is not available
+
+
+Scenario: Submitting a trial-edited text as a correction
+  Given the Managing Editor has trial-edited a text element
+  And the revised text fits the allotted space
+  When the Managing Editor submits the proposed text change
+  Then an Open annotation is created for that text element
+  And the annotation contains the proposed replacement text
+  And the production source file remains unchanged
 ```
 
-**Related requirements:** BR-01, BR-02, FR-01
+**Related requirements:** BR-01, BR-02, FR-01, FR-03
+
+### User Story — US-04: Updating the Layout Preview
+
+> **As a** DTP Specialist,
+> **I want** to update the interactive preview with the latest production layout,
+> **so that** the Managing Editor can review the current version while existing corrections remain traceable.
+
+```gherkin
+Feature: Layout Preview Update
+
+Scenario: Updating the preview with a new layout version
+  Given the interactive preview contains existing annotations
+  When the DTP Specialist updates the preview with the latest production layout
+  Then the latest layout is displayed
+  And existing annotations are preserved
+  And they retain their current status
+
+Scenario: Preserving annotation associations after a layout update
+  Given an annotation is linked to a text or visual element
+  And another annotation is associated with a specific page within a section
+  When the DTP Specialist updates the preview
+  Then the content-linked annotation remains associated with its element
+  And is displayed at the element's new location
+  And the page-level annotation remains associated with the same section
+  And with the same relative page, provided that page still exists
+
+Scenario: Annotation target no longer exists
+  Given an annotation's original target is no longer present in the updated layout
+  When the DTP Specialist updates the preview
+  Then the annotation remains Open
+  And is flagged for manual reassignment
+```
+**Related requirements:** FR-05, BR-04
 
 ---
 
@@ -115,6 +166,7 @@ Feature: Text Fit Check
 | Paper-based page review | FR-02 | US-02 |
 | Corrections recorded across successive printed proofs | FR-03 | US-01, US-02 |
 | No consolidated view of outstanding corrections | FR-04 | US-01 |
+| Successive layout versions | FR-05 | BR-04, US-04 |
 
 ---
 
