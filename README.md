@@ -32,8 +32,6 @@ This case study focuses on one well-defined slice of that process: the revision 
 
 ## 3. Illustrative Scenario
 
-The case study follows the revision of one textbook chapter from the first DTP layout through iterative review and correction cycles to readiness for teacher focus-testing.
-
 `First DTP layout` → `Managing Editor review` → `Corrections by DTP` → `Repeated review cycle` → `Teacher-focus testing readiness`
 
 A detailed AS-IS scenario and identified pain points are described in [`01_problem_and_scenario.md`](docs/01_problem_and_scenario.md).
@@ -60,6 +58,8 @@ The proposed solution targets these problems through an interactive layout previ
 ## 5. Success Measures & Illustrative NFRs
 
 ### Success Measures
+
+> The success measures below are based on observed characteristics of the real AS-IS process and define proposed targets for the conceptual solution.
 
 - **Revision cycle time:** Within two months of introducing the proposed tool, the time from the first DTP layout of a chapter to focus-testing readiness should not exceed two weeks.
 - **Printed proof reduction:** Within two months of introducing the proposed tool, the number of pages printed during the revision of a 20-page chapter should decrease from approximately 200 pages to no more than 40 pages *(approximately an 80% reduction)*.
@@ -113,13 +113,11 @@ The proposed solution is specified through functional requirements, business rul
 ---
 ## 💡 Skills Demonstrated
 
-`Requirements analysis and functional requirements definition`
-`Business rules identification`
-`User Stories and Acceptance Criteria in Gherkin`
-`Requirements traceability`
-`AS-IS / TO-BE process analysis and BPMN modelling`
-`Pain-point identification and process improvement`
-`Scope definition and MVP thinking`
+`Requirements Analysis & Functional Requirements`
+`User Stories & Gherkin Acceptance Criteria`
+`Requirements Traceability`
+`AS-IS / TO-BE Analysis & BPMN 2.0`
+`Scope Definition & Process Improvement`
 
 ---
 
