@@ -1,37 +1,32 @@
 # Editorial–DTP Revision Workflow
 ### Business Analysis Mini Case Study
 
-`Status: In Progress` `Type: Conceptual Case Study` `Domain: Publishing / EdTech` `Methods: BPMN 2.0 / User Stories / Gherkin`
+`Status: Complete` `Type: Conceptual Case Study` `Domain: Publishing / EdTech` `Methods: BPMN 2.0 / User Stories / Gherkin`
 
-A focused BA case study of a single, well-defined process slice: the revision loop between a Managing Editor and a DTP Specialist while preparing one textbook chapter for focus-testing with teachers.
+The case study described here is one step within a much broader process: preparing a school textbook. Authors create the source materials, which go through external consultation before the publishing house develops them editorially and visually — the latter handled by a DTP Specialist, who formats and typesets each page. The materials are then tested with a teacher focus group, followed by a further round of revisions and consultation. The print version undergoes a ministry review before publication; the multimedia version is published directly.
 
-Rather than modelling an entire publishing platform, this case study traces one real scenario end-to-end — from the first DTP layout to sign-off — to demonstrate requirements analysis, process modelling and solution specification in depth rather than breadth.
+`Author manuscript` → `External consultation` → `Editorial content review` → &#128397; **layout & revision loop (this case study)** → 
+`Teacher-focus testing` → `Revisions from teacher-focus feedback` → `Author consultation` → `External consultation` → `DTP rework` → `Final version` → `Ministry review` → `Publication`
 
----
-
-## 1. Where This Fits in the Wider Process
-
-This case study focuses only on the DTP layout and revision loop for one textbook chapter. The stages before and after this loop — such as authoring, external consultation, focus-group testing, final revisions and publication — are outside the scope of the analysis.
-
-`Author manuscript` → `External consultation` → `Editorial content review` → **DTP layout & revision loop (this case study)** → `Teacher-focus testing` → `Revisions from teacher-focus feedback` → `Author consultation` → `External consultation` → `DTP rework` → `Final version` → `Ministry review` → `Publication`
+This case study focuses on one well-defined slice of that process: the revision loop between a Managing Editor and a DTP Specialist while preparing a textbook chapter for teacher focus-testing. It traces one real scenario end-to-end — from the first page layout to sign-off — rather than modelling the entire publishing process; all other stages are outside its scope.
 
 ---
 
-## 2. Actors
+## 1. Actors
 
 | Actor | Involved in this workflow? | Role |
 |---|---|---|
 | **Managing Editor** | ✅ | Reviews successive layout versions, identifies required changes, makes trial text edits, places annotations and gives sign-off |
 | **DTP Specialist (Desktop Publishing Specialist)** | ✅ | Prepares and updates the typeset page layout, places visual assets and applies accepted editorial changes to the source file |
-| Author | ❌ (upstream / outside this workflow) | Provides the manuscript before the DTP revision process begins |
-| Subject-matter Reviewer | ❌ (upstream / outside this workflow) | Reviews the content before typesetting begins |
+| Author | ❌ outside this workflow | Provides the manuscript before the DTP revision process begins |
+| Subject-matter Reviewer | ❌ outside this workflow | Reviews the content before typesetting begins |
 
 ---
 
-## 3. Context & Disclaimer
+## 2. Context & Disclaimer
 
 - **Domain background:** The process, actors and pain points described here come from real professional experience managing editorial teams in educational publishing. In practice, this revision loop was handled primarily on paper — printed layouts were marked up in red pen &#128397; and physically passed back to DTP for correction.
-- **Portfolio nature:** The digital tool proposed below — including its requirements, user stories and business rule — is a conceptual solution created independently for this portfolio. It was never implemented at the company in question. Its purpose is to demonstrate how a Business Analyst could specify a targeted digital improvement for this particular workflow.
+- **Portfolio nature:** The digital tool proposed below — including its requirements, user stories and business rules — is a conceptual solution created independently for this portfolio. It was never implemented at the company in question. Its purpose is to demonstrate how a Business Analyst could specify a targeted digital improvement for this particular workflow.
 
 ---
 
@@ -89,7 +84,7 @@ The proposed solution targets these problems through a interactive layout previe
 - Shared interactive layout preview for the Managing Editor and DTP Specialist
 - Text-only trial editing for body text, headings and captions
 - Review of photographs, illustrations and captions within the full page layout
-- Digital annotations with Open / Resolved status
+- Digital annotations with `Open` / `Resolved` status
 - Consolidated tracking of outstanding corrections with direct navigation to their location
 
 **Out of scope**
@@ -132,6 +127,7 @@ The proposed solution is specified through functional requirements, business rul
 ## 📬 Contact
 
 **Kamila Woronicz**
+
 Business Analyst | Product Manager *(career transition)*
 
 - Email: kamila.woronicz@gmail.com
