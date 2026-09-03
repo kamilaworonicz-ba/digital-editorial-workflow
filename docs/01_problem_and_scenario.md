@@ -20,7 +20,7 @@ These pain points provide the basis for the functional requirements defined in [
 
 ---
 
-## 1.2. Illustrative Scenario: Chapter 8
+## 1.2. Illustrative Scenario
 
 > The sequence below illustrates a typical revision path rather than a fixed number of rounds. Text, caption and visual issues could overlap and reappear across multiple iterations.
 
