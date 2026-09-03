@@ -108,7 +108,7 @@ The proposed solution is specified through functional requirements, business rul
 |---|---|
 | [`01_problem_and_scenario.md`](docs/01_problem_and_scenario.md) |	AS-IS problem, scenario and pain points |
 | [`02_requirements.md`](docs/02_requirements.md) | Functional requirements, business rules, user stories, acceptance criteria and traceability |
-| [`03_process_diagrams.md`](doc/03_process_diagrams.md) | AS-IS and proposed TO-BE BPMN process models |
+| [`03_process_diagrams.md`](docs/03_process_diagrams.md) | AS-IS and proposed TO-BE BPMN process models |
 
 ---
 ## 💡 Skills Demonstrated
