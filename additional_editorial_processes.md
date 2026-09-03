@@ -1,7 +1,11 @@
-The AS-IS model shows the current paper-based revision workflow. Printed proofs are used to review the layout, corrections are marked and numbered manually, and the marked-up proof is physically handed over to the DTP Specialist.
+#Additional Editorial Process Models
 
-![AS-IS chapter revision process](../process_diagram/BPMN_AS-IS_editorial.svg)
+This section contains additional BPMN 2.0 process models based on editorial and publishing workflows. They are included to demonstrate process modelling across different scenarios beyond the main case study.
 
->**Legend:** Highlighted activities are eliminated in the proposed TO-BE process. Other activities may remain but be performed digitally.
+## 1. Video production process
 
-[View AS-IS BPMN source file](../process_diagram/BPMN_AS-IS_editorial.bpmn)
+This BPMN diagram presents the process of producing videos that illustrate selected experiments from a physics textbook. Only selected experiments are commissioned for video production, with the work carried out by an external production company. The publisher reviews each version and may request revisions or consult the textbook authors before approval. The Promotion Department is responsible for contracting the supplier and authorising payment once the final version is accepted.
+
+![video_production_process](../process_diagram/video_production_process.svg)
+
+[View video_production_process source file](../process_diagram/video_production_process.bpmn)
