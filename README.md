@@ -30,17 +30,17 @@ This case study focuses on one well-defined slice of that process: the revision 
 
 ---
 
-## 4. Illustrative Scenario
+## 3. Illustrative Scenario
 
 The case study follows the revision of one textbook chapter from the first DTP layout through iterative review and correction cycles to readiness for teacher focus-testing.
 
-**First DTP layout → Managing Editor review → corrections by DTP → repeated review cycle → focus-testing readiness**
+`First DTP layout` → `Managing Editor review` → `Corrections by DTP` → `Repeated review cycle` → `Teacher-focus testing readiness`
 
 A detailed AS-IS scenario and identified pain points are described in [`01_problem_and_scenario.md`](docs/01_problem_and_scenario.md).
 
 ---
 
-## 5. Problem & Goal
+## 4. Problem & Goal
 
 Each revision cycle relied on printed proofs, red-pen annotations and manual application of corrections.
 
@@ -53,11 +53,11 @@ This created several recurring problems:
 
 **The goal is to reduce unnecessary paper-based handoffs and make the revision loop faster, clearer and easier to track.**
 
-The proposed solution targets these problems through a interactive layout preview that allows the Managing Editor to review page composition, test text fit and track corrections without relying on physical handoffs.
+The proposed solution targets these problems through an interactive layout preview that allows the Managing Editor to review page composition, test text fit and track corrections without relying on physical handoffs.
 
 ---
 
-## 6. Success Measures & Illustrative NFRs
+## 5. Success Measures & Illustrative NFRs
 
 ### Success Measures
 
@@ -67,17 +67,17 @@ The proposed solution targets these problems through a interactive layout previe
 
 ### Illustrative NFRs
 
->The NFRs below are hypothetical examples created for this portfolio case study. They are not derived from measured production-system constraints and are included to demonstrate how non-functional requirements could be defined for the proposed solution.
+> The values below are illustrative acceptance targets and would require validation with stakeholders and the technical team.
 
 | ID | Category | Illustrative NFR |
 |---|---|---|
-| NFR-01|	Performance	| The interactive layout preview should load within 3 seconds under normal operating conditions. |
-| NFR-02 | Performance | Creating or updating an annotation should be reflected in the shared preview within 2 seconds. |
+| NFR-01|	Performance	| The interactive layout preview should load within 3 seconds, consistent with common UX benchmarks for perceived responsiveness. |
+| NFR-02 | Performance | Annotations should sync in near real-time (target: within 1 second) to support simultaneous review — informed by experience with a similar internal tool, where slower refresh times were a recurring source of user frustration.|
 | NFR-03 | Usability | A Managing Editor or DTP Specialist should be able to locate an open correction and navigate to its position in the layout within three user interactions from the correction list. |
 
 ---
 
-## 7. Scope
+## 6. Scope
 
 **In scope**
 
@@ -89,27 +89,26 @@ The proposed solution targets these problems through a interactive layout previe
 
 **Out of scope**
 
-- Other roles and stages of the wider editorial process
 - Asset licensing and rights management
 - Final print-ready production and DAM integration
 - Automatic visual comparison between DTP versions
 
 ---
 
-## 8. Requirements
+## 7. Requirements
 
 The proposed solution is specified through functional requirements, business rules, user stories and acceptance criteria. Full specification and traceability:
 ➡️ [`02_requirements.md`](docs/02_requirements.md) 
 
 ---
 
-## 9. Case Study Contents
+## 8. Case Study Contents
 
 | Document |	Purpose |
 |---|---|
 | [`01_problem_and_scenario.md`](docs/01_problem_and_scenario.md) |	AS-IS problem, scenario and pain points |
 | [`02_requirements.md`](docs/02_requirements.md) | Functional requirements, business rules, user stories, acceptance criteria and traceability |
-| [`03_process_diagrams.md`](03_process_diagrams.md) | AS-IS and proposed TO-BE BPMN process models |
+| [`03_process_diagrams.md`](doc/03_process_diagrams.md) | AS-IS and proposed TO-BE BPMN process models |
 
 ---
 ## 💡 Skills Demonstrated
