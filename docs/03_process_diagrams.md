@@ -36,7 +36,7 @@ Required corrections are recorded directly in the preview and are available to t
 |---|---|
 | Printed proofs are required for each review cycle. | The Managing Editor reviews the current layout directly in the shared interactive preview. |
 | Corrections are manually marked on printed proofs. | Corrections are recorded as location-specific annotations and tracked digitally. |
-| Marked-up proofs must be physically handed over to the DTP Specialist. | Recorded corrections are immediately available to the DTP Specialist in the shared system. |
+| Marked-up proofs must be physically handed over to the DTP Specialist. | Recorded corrections are available to the DTP Specialist in the shared system. |
 | Updated layouts must be printed again before the Managing Editor can verify the changes. | Updated layouts can be reviewed directly in the interactive preview. |
 | Outstanding corrections must be identified by comparing successive printed proofs. | Corrections are tracked using `Open` and `Resolved` statuses and can be reviewed in a consolidated correction list. |
 | Testing whether revised text fits the available layout space requires another DTP iteration. | The Managing Editor can trial-edit text in the preview to verify text fit before requesting a change to the production file. |
