@@ -9,6 +9,8 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
 ## 2. 1. Functional Requirements
 
 > The functional requirements below were derived from the pain points identified in the AS-IS workflow. All five are considered in scope for the proposed MVP.
+> 
+> Some requirements below combine several tightly coupled system behaviours into a single functional requirement, where splitting them would describe an incomplete or non-functional step in isolation.
 
 <table>
   <tr>
@@ -24,7 +26,7 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
       Even a small text correction requires DTP to update the layout before the Managing Editor can verify whether it works.
     </td>
     <td>
-      The system shall allow the Managing Editor to trial-edit text, including body text, headings and captions, directly in the interactive layout preview, immediately show whether the revised text fits the allotted space, and submit the proposed text as a requested correction.
+The system shall allow the Managing Editor to trial-edit text, including body text, headings and captions, directly in the interactive layout preview. The system shall show whether the revised text fits the allotted space. The Managing Editor shall be able to submit the proposed text as a requested correction regardless of whether it fits. Where the text does not fit, the resulting correction shall be flagged as requiring a layout adjustment.
     </td>
   </tr>
 
@@ -46,14 +48,14 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
       Required changes are distributed across separate marked-up proofs rather than managed as one coherent set of corrections.
     </td>
     <td>
-      The system shall allow the Managing Editor to create an annotation linked to a text or visual element, or to a specific page location, and describe the required correction. For submitted trial-edited text, the system shall automatically create an annotation containing the proposed replacement text. Each annotation shall have an <code>Open</code> or <code>Resolved</code> status and be visible to the DTP Specialist.
+     The system shall allow the Managing Editor to create an annotation — linked to a text or visual element, a specific page location, or automatically generated from submitted trial-edited text — describing the required correction, with an initial status of `Open`. The system shall allow the DTP Specialist to mark an annotation `Resolved`, and the Managing Editor to reopen it if further correction is required.
     </td>
   </tr>
 
   <tr>
     <td><strong>FR-05</strong></td>
     <td>
-      The system shall allow the DTP Specialist to update the interactive preview with the latest version of the production layout while preserving existing annotations, their statuses and their association with the relevant content.
+     The system shall allow the DTP Specialist to update the interactive preview with the latest version of the production layout, while preserving existing annotations, their statuses and their association with the relevant content. If the target of an `Open` annotation is no longer available after the update, the annotation shall remain `Open` and be flagged for reassignment. If the target of a `Resolved` annotation is no longer available, the annotation shall remain `Resolved` and accessible from the correction list, without being anchored in the current layout.
     </td>
   </tr>
 
@@ -64,7 +66,7 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
       Determining which corrections have been addressed and which still require attention requires manual comparison of successive proofs.
     </td>
     <td>
-      The system shall provide both the Managing Editor and the DTP Specialist with a consolidated list of annotations for the current chapter, showing their status, allowing filtering by status and providing direct navigation to the corresponding location in the layout.
+      The system shall provide both the Managing Editor and the DTP Specialist with a consolidated list of annotations for the current chapter, showing their status, allowing filtering by status and providing direct navigation to the corresponding location in the layout where a current anchor exists.
     </td>
   </tr>
 </table>
@@ -74,17 +76,13 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
 ## 2.2. Business Rules
 
 ### BR-01 — Trial Edit Scope
-
-The Managing Editor may trial-edit body text, headings and captions in the interactive preview solely to evaluate text fit. Trial edits are visible only to the Managing Editor and are not shared with the DTP Specialist unless submitted as a requested correction. The Managing Editor cannot reposition, resize or otherwise modify layout or visual elements in the preview.
+The Managing Editor may trial-edit body text, headings and captions in the interactive preview to evaluate text fit and submit it as a requested correction. Trial edits are visible only to the Managing Editor and are not shared with the DTP Specialist unless submitted as a requested correction. The Managing Editor cannot reposition, resize or otherwise modify layout or visual elements in the preview.
 
 ### BR-02 — Production File Ownership
 Only the DTP Specialist applies accepted text, layout and visual changes to the production source file. Changes made in the interactive preview do not modify the production source file.
 
 ### BR-03 — Correction Resolution
-An annotation is created with the status `Open`. After applying the requested correction to the production source file, the DTP Specialist may change its status to `Resolved`. If the Managing Editor determines during review that further correction is required, the annotation may be reopened.
-
-### BR-04 — Annotation Anchoring
-If the target of an `Open` annotation is no longer available after a layout update, the annotation remains `Open` and is flagged for reassignment by the Managing Editor. If the target of a `Resolved` annotation is no longer available, the annotation remains `Resolved` and accessible from the correction list but is no longer anchored in the current layout.
+The DTP Specialist may change an annotation's status from `Open` to `Resolved` only after applying the requested correction to the production source file.
 
 ---
 
@@ -104,7 +102,7 @@ Scenario: Reviewing outstanding corrections
   When the Managing Editor opens the correction list
   Then each annotation is displayed with its current status
   And the Managing Editor can filter the list to show only open annotations
-  And selecting an annotation takes the Managing Editor to its location in the layout
+  And selecting an annotation with a current anchor takes the Managing Editor to its location in the layout
 ```
 
 **Related requirements:** BR-03, FR-03, FR-04 
@@ -126,7 +124,7 @@ Scenario: Reviewing a requested correction
   Then the complete current page layout is displayed
   And the annotation is visible at the location where the correction is required
   And the annotation displays the description of the requested correction
-  And the DTP Specialist can navigate to the annotation from the correction list
+  And the DTP Specialist can navigate to the annotation from the correction list where a current anchor exists
 
 Scenario: Completing a requested correction
   Given the DTP Specialist has applied the requested correction to the production source file
@@ -151,7 +149,7 @@ Feature: Text Fit Check
 Scenario: Checking whether revised text fits
   Given the Managing Editor is reviewing a text element in the interactive layout preview
   When the Managing Editor edits the text
-  Then the system immediately shows whether the revised text fits
+  Then the system shows whether the revised text fits
   And the trial edit is visible only to the Managing Editor
   And the production source file remains unchanged
 
@@ -168,6 +166,14 @@ Scenario: Submitting a trial-edited text as a correction
   Then an Open annotation is created for that text element
   And the annotation contains the proposed replacement text
   And the production source file remains unchanged
+
+Scenario: Submitting text that does not fit
+  Given the Managing Editor has trial-edited a text element
+  And the revised text does not fit the allotted space
+  When the Managing Editor submits the proposed text change
+  Then an Open annotation is created for that text element
+  And the annotation is flagged as requiring a layout adjustment
+  And the annotation contains the proposed replacement text
 ```
 
 **Related requirements:** BR-01, BR-02, FR-01, FR-03
@@ -197,13 +203,20 @@ Scenario: Preserving annotation associations after a layout update
   And the page-level annotation remains associated with the same section
   And with the same relative page, provided that page still exists
 
-Scenario: Annotation target no longer exists
-  Given an annotation's original target is no longer present in the updated layout
+Scenario: Open annotation target no longer exists
+  Given an Open annotation's original target is no longer present in the updated layout
   When the DTP Specialist updates the preview
   Then the annotation remains Open
-  And is flagged for manual reassignment
+  And is flagged for manual reassignment by the Managing Editor.
+
+Scenario: Resolved annotation target no longer exists
+  Given a Resolved annotation's original target is no longer present in the updated layout
+  When the DTP Specialist updates the preview
+  Then the annotation remains Resolved
+  And is accessible from the correction list
+  And is no longer anchored in the current layout
 ```
-**Related requirements:** FR-05, BR-04
+**Related requirements:** FR-05
 
 ---
 
@@ -219,7 +232,7 @@ Scenario: Annotation target no longer exists
   <tr>
     <td>🔍 <strong>No live text fit-check</strong></td>
     <td>FR-01</td>
-    <td>BR-01, BR-02, US-03</td>
+    <td>BR-01, BR-02, BR-03, US-03</td>
   </tr>
 
   <tr>
@@ -231,12 +244,12 @@ Scenario: Annotation target no longer exists
   <tr>
     <td rowspan="2">📄 <strong>Corrections recorded across successive proofs</strong></td>
     <td>FR-03</td>
-    <td>US-01, US-02</td>
+    <td>US-01, US-02, US-03</td>
   </tr>
 
   <tr>
     <td>FR-05</td>
-    <td>BR-04, US-04</td>
+    <td>US-04</td>
   </tr>
 
   <tr>
