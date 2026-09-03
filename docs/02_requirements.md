@@ -33,9 +33,7 @@ Only the DTP Specialist applies accepted text, layout and visual changes to the 
 An annotation is created with the status `Open`. After applying the requested correction to the production source file, the DTP Specialist may change its status to `Resolved`. If the Managing Editor determines during review that further correction is required, the annotation may be reopened.
 
 ### BR-04 — Annotation Anchoring
-An annotation linked to a text or visual element remains associated with that element when the layout is updated, even if the element changes position or moves to another page.
-An annotation placed at page level rather than on a specific element remains associated with the same section and, where possible, the same relative page within that section.
-If the original annotation target is no longer available after a layout update, the annotation remains open and is flagged for reassignment by the Managing Editor.
+If the target of an `Open` annotation is no longer available after a layout update, the annotation remains `Open` and is flagged for reassignment by the Managing Editor. If the target of a `Resolved` annotation is no longer available, the annotation remains `Resolved` and accessible from the correction list but is no longer anchored in the current layout.
 
 ---
 
