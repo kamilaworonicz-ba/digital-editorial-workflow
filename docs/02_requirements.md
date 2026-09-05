@@ -263,7 +263,16 @@ Scenario: "Resolved" annotation target no longer exists
 </table>
 
 ---
+### Illustrative NFRs
 
+> The values below are illustrative acceptance targets and would require validation with stakeholders and the technical team.
+
+| ID | Category | Illustrative NFR |
+|---|---|---|
+| NFR-01|	Performance	| The interactive layout preview shall load within 3 seconds, consistent with common UX benchmarks for perceived responsiveness. |
+| NFR-02 | Performance | Annotations shall sync in near real-time (target: within 1 second) to support simultaneous review — informed by experience with a similar internal tool, where slower refresh times were a recurring source of user frustration.|
+| NFR-03 | Usability | A Managing Editor or DTP Specialist shall be able to locate an open correction and navigate to its position in the layout within three user interactions from the correction list. |
+---
 These requirements derive from the AS-IS workflow described in [`01_problem_and_scenario.md`](./01_problem_and_scenario.md) and are reflected in the AS-IS and proposed TO-BE process models in [`03_process_diagrams.md`](./03_process_diagrams.md).
 
 ---
