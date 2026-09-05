@@ -55,7 +55,7 @@ The system shall allow the Managing Editor to trial-edit text, including body te
   <tr>
     <td><strong>FR-05</strong></td>
     <td>
-     The system shall allow the DTP Specialist to update the interactive preview with the latest version of the production layout, while preserving existing annotations, their statuses and their association with the relevant text or visual elements. If the element associated with an `Open` annotation is no longer available after the update, the annotation shall remain `Open` and be flagged for reassignment. If the element associated with a `Resolved` annotation is no longer available, the annotation shall remain `Resolved` and accessible from the correction list, but shall no longer be displayed in the current layout.
+    The system shall allow the DTP Specialist to update the interactive preview with the latest production layout while preserving existing annotations, their statuses and associations. If an associated element is no longer available, an `Open` annotation shall remain `Open` and be flagged for reassignment. The Managing Editor may manually reassign it to another text or visual element. A `Resolved` annotation shall remain `Resolved` and accessible from the correction list, but shall no longer be displayed in the current layout.
     </td>
   </tr>
 
@@ -222,37 +222,43 @@ Scenario: "Resolved" annotation target no longer exists
 <table>
   <tr>
     <th>Pain point</th>
-    <th>Requirement</th>
-    <th>User Story / Rule</th>
+    <th>Functional requirement</th>
+    <th>Business Rule</th>
+    <th>User Story</th>
   </tr>
 
   <tr>
     <td>🔍 <strong>No live text fit-check</strong></td>
     <td>FR-01</td>
-    <td>BR-01, BR-02, BR-03, US-03</td>
+    <td>BR-01, BR-02</td>
+    <td>US-03</td>
   </tr>
 
   <tr>
     <td>🖨️ <strong>Paper-based page review</strong></td>
     <td>FR-02</td>
+    <td>—</td>
     <td>US-02</td>
   </tr>
 
   <tr>
     <td rowspan="2">📄 <strong>Corrections recorded across successive proofs</strong></td>
     <td>FR-03</td>
+    <td>BR-03</td>
     <td>US-01, US-02, US-03</td>
   </tr>
 
   <tr>
     <td>FR-05</td>
+    <td>—</td>
     <td>US-04</td>
   </tr>
 
   <tr>
     <td>❓ <strong>No consolidated view of outstanding corrections</strong></td>
     <td>FR-04</td>
-    <td>US-01</td>
+    <td>—</td>
+    <td>US-01, US-02</td>
   </tr>
 </table>
 
