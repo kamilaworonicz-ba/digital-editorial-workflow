@@ -71,9 +71,9 @@ The proposed solution targets these problems through an interactive layout previ
 
 | ID | Category | Illustrative NFR |
 |---|---|---|
-| NFR-01|	Performance	| The interactive layout preview should load within 3 seconds, consistent with common UX benchmarks for perceived responsiveness. |
-| NFR-02 | Performance | Annotations should sync in near real-time (target: within 1 second) to support simultaneous review — informed by experience with a similar internal tool, where slower refresh times were a recurring source of user frustration.|
-| NFR-03 | Usability | A Managing Editor or DTP Specialist should be able to locate an open correction and navigate to its position in the layout within three user interactions from the correction list. |
+| NFR-01|	Performance	| The interactive layout preview shall load within 3 seconds, consistent with common UX benchmarks for perceived responsiveness. |
+| NFR-02 | Performance | Annotations shall sync in near real-time (target: within 1 second) to support simultaneous review — informed by experience with a similar internal tool, where slower refresh times were a recurring source of user frustration.|
+| NFR-03 | Usability | A Managing Editor or DTP Specialist shall be able to locate an open correction and navigate to its position in the layout within three user interactions from the correction list. |
 
 ---
 
