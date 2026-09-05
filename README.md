@@ -44,7 +44,7 @@ The proposed solution targets these problems through an interactive layout previ
 
 ## 🎯 Scope
 
-**In scope**
+**In scope:**
 
 - Shared interactive layout preview for the Managing Editor and DTP Specialist
 - Text-only trial editing for body text, headings and captions
@@ -52,7 +52,7 @@ The proposed solution targets these problems through an interactive layout previ
 - Digital annotations with `Open` / `Resolved` status
 - Consolidated tracking of outstanding corrections with direct navigation to their location
 
-**Out of scope**
+**Out of scope:**
 
 - Asset licensing and rights management
 - Final print-ready production and DAM integration
