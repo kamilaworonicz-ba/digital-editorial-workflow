@@ -7,6 +7,16 @@ Once a manuscript was typeset for the first time, it entered an iterative revisi
 > [!WARNING]
 > In the process this case study is based on, the workflow was primarily **paper-based**. DTP produced a printed proof, the Managing Editor reviewed the layout and marked corrections by hand, and the marked-up pages were returned to DTP for another revision.
 
+## 1. Actors
+
+| Actor | Involved in this workflow? | Role |
+|---|---|---|
+| **Managing Editor** | ✅ | Reviews successive layout versions, identifies required changes, makes trial text edits, places annotations and gives sign-off |
+| **DTP Specialist (Desktop Publishing Specialist)** | ✅ | Prepares and updates the typeset page layout, places visual assets and applies accepted editorial changes to the source file |
+| Author | ❌ outside this workflow | Provides the manuscript before the DTP revision process begins |
+| Subject-matter Reviewer | ❌ outside this workflow | Reviews the content before typesetting begins |
+
+
 This created several recurring problems:
 
 | Pain point | Operational impact |
