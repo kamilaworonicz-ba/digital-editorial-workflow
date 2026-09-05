@@ -36,9 +36,7 @@ The proposed solution targets these problems through an interactive layout previ
 
 ---
 
-📈 Proposed Success Measures & Illustrative NFRs
-
-### Success Measures
+## 📈 Success Measures
 
 > The success measures below are based on observed characteristics of the real AS-IS process and define proposed targets for the conceptual solution.
 
