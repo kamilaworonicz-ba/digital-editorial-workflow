@@ -1,7 +1,8 @@
 # Editorial–DTP Revision Workflow
 ### Business Analysis Mini Case Study
 
-`Status: Complete` `Type: Conceptual Case Study` `Domain: Publishing / EdTech` `Methods: BPMN 2.0 / User Stories / Gherkin`
+`Status: Complete` `Type: Conceptual Case Study` `Domain: Publishing / EdTech` <br>
+`Methods: Requirements Analysis / User Stories / Gherkin / Traceability/ BPMN 2.0`
 
 The case study described here is one step within a much broader process: preparing a school textbook. Authors create the source materials, which go through external consultation before the publishing house develops them editorially and visually — the latter handled by a DTP Specialist, who formats and typesets each page. The materials are then tested with a teacher focus group, followed by a further round of revisions and consultation. The print version undergoes a ministry review before publication; the multimedia version is published directly.
 
