@@ -15,6 +15,8 @@ The typical AS-IS revision loop was:
 
 `First DTP layout` → &#128397; `Managing Editor review` → `Corrections by DTP Specialist` → `Repeated review cycle` → `Teacher focus testing readiness`
 
+The proposed solution is a shared **Interactive Layout Preview** that allows the Managing Editor to review page composition, test text fit and track corrections digitally.
+
 ---
 
 ## 4. Problem & Goal
@@ -44,19 +46,9 @@ The proposed solution targets these problems through an interactive layout previ
 - **Printed proof reduction:** Within two months of introducing the proposed tool, the number of pages printed during the revision of a 20-page chapter should decrease from approximately 200 pages to no more than 40 pages *(approximately an 80% reduction)*.
 - **Digital correction tracking:** Within two months of introducing the proposed tool, at least 90% of corrections exchanged between the Managing Editor and the DTP Specialist should be recorded and tracked through the shared interactive preview rather than through printed proofs.
 
-### Illustrative NFRs
-
-> The values below are illustrative acceptance targets and would require validation with stakeholders and the technical team.
-
-| ID | Category | Illustrative NFR |
-|---|---|---|
-| NFR-01|	Performance	| The interactive layout preview shall load within 3 seconds, consistent with common UX benchmarks for perceived responsiveness. |
-| NFR-02 | Performance | Annotations shall sync in near real-time (target: within 1 second) to support simultaneous review — informed by experience with a similar internal tool, where slower refresh times were a recurring source of user frustration.|
-| NFR-03 | Usability | A Managing Editor or DTP Specialist shall be able to locate an open correction and navigate to its position in the layout within three user interactions from the correction list. |
-
 ---
 
-## 6. Scope
+## 🎯 Scope
 
 **In scope**
 
@@ -74,7 +66,7 @@ The proposed solution targets these problems through an interactive layout previ
 
 ---
 
-## 8. Case Study Contents
+## 📂 Case Study Contents
 
 | Document |	Purpose |
 |---|---|
