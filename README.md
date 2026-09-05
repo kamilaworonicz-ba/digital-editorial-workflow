@@ -1,41 +1,19 @@
 # Editorial–DTP Revision Workflow
 ### Business Analysis Mini Case Study
 
-`Status: Complete` `Type: Conceptual Case Study` `Domain: Publishing / EdTech` <br>
+`Status: Complete` `Type: Real-World Process / Conceptual Solution` `Domain: Publishing / EdTech` <br>
 `Methods: Requirements Analysis / User Stories / Gherkin / Traceability/ BPMN 2.0`
 
-The case study described here is one step within a much broader process: preparing a school textbook. Authors create the source materials, which go through external consultation before the publishing house develops them editorially and visually — the latter handled by a DTP Specialist, who formats and typesets each page. The materials are then tested with a teacher focus group, followed by a further round of revisions and consultation. The print version undergoes a ministry review before publication; the multimedia version is published directly.
+This case study focuses on a real editorial–DTP revision workflow observed in educational publishing. In the AS-IS process, successive textbook layouts were reviewed primarily on paper, with corrections marked by hand and passed back to the DTP Specialist *(responsible for page layout and typesetting)*.
 
-`Author manuscript` → `External consultation` → `Editorial content review` → &#128397; **layout & revision loop (this case study)** → 
-`Teacher-focus testing` → `Revisions from teacher-focus feedback` → `Author consultation` → `External consultation` → `DTP rework` → `Final version` → `Ministry review` → `Publication`
+The proposed digital solution is conceptual and was created independently for this portfolio. It was not implemented at the company.
+Its purpose is to show how a Business Analyst could define requirements for a targeted digital improvement.
 
-This case study focuses on one well-defined slice of that process: the revision loop between a Managing Editor and a DTP Specialist while preparing a textbook chapter for teacher focus-testing. It traces one real scenario end-to-end — from the first page layout to sign-off — rather than modelling the entire publishing process; all other stages are outside its scope.
+The case study covers only the revision loop between the Managing Editor and DTP Specialist, from the first page layout to sign-off for teacher focus testing *(review of the material by a group of teachers before further revisions)*.
 
----
+The typical AS-IS revision loop was:
 
-## 1. Actors
-
-| Actor | Involved in this workflow? | Role |
-|---|---|---|
-| **Managing Editor** | ✅ | Reviews successive layout versions, identifies required changes, makes trial text edits, places annotations and gives sign-off |
-| **DTP Specialist (Desktop Publishing Specialist)** | ✅ | Prepares and updates the typeset page layout, places visual assets and applies accepted editorial changes to the source file |
-| Author | ❌ outside this workflow | Provides the manuscript before the DTP revision process begins |
-| Subject-matter Reviewer | ❌ outside this workflow | Reviews the content before typesetting begins |
-
----
-
-## 2. Context & Disclaimer
-
-- **Domain background:** The process, actors and pain points described here come from real professional experience managing editorial teams in educational publishing. In practice, this revision loop was handled primarily on paper — printed layouts were marked up in red pen &#128397; and physically passed back to DTP for correction.
-- **Portfolio nature:** The digital tool proposed below — including its requirements, user stories and business rules — is a conceptual solution created independently for this portfolio. It was never implemented at the company in question. Its purpose is to demonstrate how a Business Analyst could specify a targeted digital improvement for this particular workflow.
-
----
-
-## 3. Illustrative Scenario
-
-`First DTP layout` → `Managing Editor review` → `Corrections by DTP` → `Repeated review cycle` → `Teacher-focus testing readiness`
-
-A detailed AS-IS scenario and identified pain points are described in [`01_problem_and_scenario.md`](docs/01_problem_and_scenario.md).
+`First DTP layout` → &#128397; `Managing Editor review` → `Corrections by DTP Specialist` → `Repeated review cycle` → `Teacher focus testing readiness`
 
 ---
 
@@ -56,7 +34,7 @@ The proposed solution targets these problems through an interactive layout previ
 
 ---
 
-## 5. Success Measures & Illustrative NFRs
+📈 Proposed Success Measures & Illustrative NFRs
 
 ### Success Measures
 
@@ -96,13 +74,6 @@ The proposed solution targets these problems through an interactive layout previ
 
 ---
 
-## 7. Requirements
-
-The proposed solution is specified through functional requirements, business rules, user stories and acceptance criteria. Full specification and traceability:
-➡️ [`02_requirements.md`](docs/02_requirements.md) 
-
----
-
 ## 8. Case Study Contents
 
 | Document |	Purpose |
@@ -110,15 +81,6 @@ The proposed solution is specified through functional requirements, business rul
 | [`01_problem_and_scenario.md`](docs/01_problem_and_scenario.md) |	AS-IS problem, scenario and pain points |
 | [`02_requirements.md`](docs/02_requirements.md) | Functional requirements, business rules, user stories, acceptance criteria and traceability |
 | [`03_process_diagrams.md`](docs/03_process_diagrams.md) | AS-IS and proposed TO-BE BPMN process models |
-
----
-## 💡 Skills Demonstrated
-
-`Requirements Analysis & Functional Requirements`
-`User Stories & Gherkin Acceptance Criteria`
-`Requirements Traceability`
-`AS-IS / TO-BE Analysis & BPMN 2.0`
-`Scope Definition & Process Improvement`
 
 ---
 
