@@ -15,22 +15,18 @@ The typical AS-IS revision loop was:
 
 `First DTP layout` → &#128397; `Managing Editor review` → `Corrections by DTP Specialist` → `Repeated review cycle` → `Teacher focus testing readiness`
 
-The proposed solution is a shared **Interactive Layout Preview** that allows the Managing Editor to review page composition, test text fit and track corrections digitally.
-
 ---
 
-## 4. Problem & Goal
+## 💡 Problem & Goal
 
-Each revision cycle relied on printed proofs, red-pen annotations and manual application of corrections.
+The paper-based revision process made it difficult to test text fit, review page composition and track outstanding corrections without repeatedly printing updated proofs.
 
-This created several recurring problems:
+Key problems included:
+- inability to test whether revised text would fit before DTP rebuilt the page,
+- repeated printing of updated layouts,
+- corrections scattered across handwritten paper proofs.
 
-- the Managing Editor could not check whether revised text would fit the available space before DTP rebuilt the page,
-- reviewing complete page composition required a new printed proof,
-- corrections existed mainly as handwritten annotations on successive paper versions,
-- determining which corrections were still outstanding required manual comparison of proofs.
-
-**The goal is to reduce unnecessary paper-based handoffs and make the revision loop faster, clearer and easier to track.**
+**Goal:** reduce paper-based handoffs and make the revision loop faster, clearer and easier to track through a shared interactive layout preview.
 
 The proposed solution targets these problems through an interactive layout preview that allows the Managing Editor to review page composition, test text fit and track corrections without relying on physical handoffs.
 
