@@ -56,6 +56,6 @@ flowchart LR
 | **5. Teacher-focus testing readiness** | The Managing Editor confirms the chapter is polished enough for teacher focus-testing — not final approval, as further changes may follow from feedback. | 
 
 ---
-[README →](../README.md) · **01 Problem & Scenario** · [02 Requirements →](./02_requirements.md) · [03 Process Diagrams →](docs/03_process_diagrams.md) · [Additional editorial processes →](additional_editorial_processes.md)
+[README →](../README.md) · **01 Problem & Scenario** · [02 Requirements →](./02_requirements.md) · [03 Process Diagrams →](./03_process_diagrams.md) · [Additional editorial processes →](../additional_editorial_processes.md)
 
 
