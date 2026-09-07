@@ -286,3 +286,7 @@ These requirements derive from the AS-IS workflow described in [`01_problem_and_
 | NFR-01|	Performance	| The interactive layout preview shall load within 3 seconds, consistent with common UX benchmarks for perceived responsiveness. |
 | NFR-02 | Performance | Annotations shall sync in near real-time (target: within 1 second) to support simultaneous review — informed by experience with a similar internal tool, where slower refresh times were a recurring source of user frustration.|
 | NFR-03 | Usability | A Managing Editor or DTP Specialist shall be able to locate an open correction and navigate to its position in the layout within three user interactions from the correction list. |
+
+---
+[README →](../README.md) · [01 Problem & Scenario →](./01_problem_and_scenario.md) · **02 Requirements** · [03 Process Diagrams →](./03_process_diagrams.md) · [Additional editorial processes →](../additional_editorial_processes.md)
+
