@@ -81,5 +81,5 @@ Business Analyst | Product Manager *(career transition)*
 - Location: Gdańsk, Poland
 
 ---
-**README** · [01 Problem & Scenario →](./01_problem_and_scenario.md) · [02 Requirements →](./02_requirements.md) · [03 Process Diagrams →](docs/03_process_diagrams.md) · [Additional editorial processes →](additional_editorial_processes.md)
+**README** · [01 Problem & Scenario →](docs/01_problem_and_scenario.md) · [02 Requirements →](docs/02_requirements.md) · [03 Process Diagrams →](docs/03_process_diagrams.md) · [Additional editorial processes →](additional_editorial_processes.md)
 
