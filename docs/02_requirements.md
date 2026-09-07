@@ -24,7 +24,7 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
       Even a small text correction requires DTP to update the layout before the Managing Editor can verify whether it works.
     </td>
     <td>
-      The system shall allow the Managing Editor to trial-edit body text, headings and captions in the interactive layout preview and show whether the revised text fits the allotted space.
+      The system shall allow the Managing Editor to trial-edit body text, headings and captions in the Interactive Layout Preview and show whether the revised text fits the allotted space.
     </td>
   </tr>
 
@@ -35,7 +35,7 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
       Reviewing text and visual composition requires repeated printing and physical handoffs between the Managing Editor and DTP Specialist.
     </td>
     <td>
-          The system shall display the current page layout, including text, photographs, illustrations and captions, in a shared interactive preview accessible to both the Managing Editor and the DTP Specialist.
+          The system shall display the current page layout, including text, photographs, illustrations and captions, in a shared Interactive Layout Preview accessible to both the Managing Editor and the DTP Specialist.
     </td>
   </tr>
 
@@ -53,7 +53,7 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
   <tr>
     <td><strong>FR-04</strong></td>
     <td>
-   The system shall allow the DTP Specialist to update the interactive preview with the latest layout version while preserving existing correction annotations and their statuses.
+   The system shall allow the DTP Specialist to update the Interactive Layout Preview with the latest layout version while preserving existing correction annotations and their statuses.
     </td>
   </tr>
 
@@ -74,10 +74,10 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
 ## 2.2. Business Rules
 
 ### BR-01 — Trial Edit Scope
-The Managing Editor may trial-edit body text, headings and captions in the interactive preview to evaluate text fit.
+The Managing Editor may trial-edit body text, headings and captions in the Interactive Layout Preview to evaluate text fit.
 
 ### BR-02 — Production File Ownership
-Only the DTP Specialist applies accepted text, layout and visual changes to the production source file. Changes made in the interactive preview, including trial edits, do not modify the production source file.
+Only the DTP Specialist applies accepted text, layout and visual changes to the production source file. Changes made in the Interactive Layout Preview, including trial edits, do not modify the production source file.
 
 ### BR-03 — Correction Resolution
 The DTP Specialist is responsible for marking an `Open` annotation `Resolved` only after applying the correction to the production source file. The system does not verify that the described correction has been made.
@@ -184,7 +184,7 @@ Scenario: Checking whether revised text fits
 ### User Story — US-05: Updating the Layout Preview
 
 > **As a** DTP Specialist,<br>
-> **I want** to update the interactive preview with the latest production layout,<br>
+> **I want** to update the Interactive Layout Preview with the latest production layout,<br>
 > **so that** the Managing Editor can review the current version while existing corrections remain traceable.
 
 ```gherkin
@@ -253,7 +253,7 @@ Scenario: Updating the preview with a new layout version
 
 | ID |  Illustrative NFR |
 |---|---|
-| NFR-01|	 The interactive layout preview shall load within 3 seconds, consistent with common UX benchmarks for perceived responsiveness. |
+| NFR-01|	 The Interactive Layout Preview shall load within 3 seconds, consistent with common UX benchmarks for perceived responsiveness. |
 | NFR-02 | Annotations shall sync in near real-time (target: within 1 second) to support simultaneous review — informed by experience with a similar internal tool, where slower refresh times were a recurring source of user frustration.|
 
 ---
