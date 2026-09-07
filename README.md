@@ -9,7 +9,7 @@ This case study focuses on a real editorial–DTP revision workflow observed in 
 The proposed digital solution is conceptual and was created independently for this portfolio. It was not implemented at the company.
 Its purpose is to show how a Business Analyst could define requirements for a targeted digital improvement.
 
-The case study covers only the revision loop between the Managing Editor and DTP Specialist, from the first page layout to sign-off for teacher focus testing *(review of the material by a group of teachers before further revisions)*.
+The case study covers only the revision loop between the Managing Editor and DTP Specialist, from the first version of the page layout to sign-off for teacher focus testing *(review of the material by a group of teachers before further revisions)*.
 
 The typical AS-IS revision loop was:
 
