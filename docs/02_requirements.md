@@ -8,7 +8,7 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
 
 ## 2. 1. Functional Requirements
 
-> Some requirements below combine several tightly coupled system behaviours into a single functional requirement, where splitting them would describe an incomplete or non-functional step in isolation.
+> For conciseness, closely related system behaviours are grouped into a small number of functional requirements.
 
 <table>
   <tr>
@@ -71,25 +71,7 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
 
 ---
 
-## 2.2. Open Questions & Further Considerations
-
-<details>
-The following aspects were considered during the analysis but intentionally left outside the scope of this mini case study:
-
-1. **Trial edit → correction creation (FR-01, FR-03):** Should submitting trial-edited text automatically create a correction annotation, or should annotation creation remain a separate action?
-2. **Lost annotation association after layout update (FR-03, FR-04):** If a text or visual element associated with an annotation no longer exists in an updated layout, should the annotation remain unassigned, be automatically reassigned where possible, or require manual reassignment by the Managing Editor?
-3. **Visibility of resolved corrections (FR-05, BR-03):** After an annotation is marked `Resolved`, should it remain visible in the Interactive Layout Preview, remain accessible only through the correction list, or be hidden entirely?
-4. **Correction list filtering (FR-05):** Should the correction list support filtering by annotation status or other criteria?
-5. **Navigation from correction list to layout (FR-05):** Should selecting an annotation in the correction list navigate the user directly to the associated text or visual element in the Interactive Layout Preview?
-6. **Access to previous layout versions (FR-04):** Should previous layout versions remain accessible after the DTP Specialist publishes an updated version, and if so, should their associated correction annotations also remain available?
-7. **Reopening resolved corrections (FR-03, BR-03):** Should the Managing Editor be able to reopen an annotation after the DTP Specialist has marked it `Resolved`, and under what conditions?
-8. **Annotation target scope (FR-03):** Should correction annotations be limited to text and visual elements, or should additional element types be supported?
-9. **Concurrent editing and layout updates (FR-01, FR-03, FR-04):** What should happen if the Managing Editor is trial-editing text or creating an annotation while the DTP Specialist publishes an updated layout version — should the in-progress work be preserved and reapplied, discarded, or temporarily blocked during the update?
-
-</details>
----
-
-## 2.3. Business Rules
+## 2.2. Business Rules
 
 ### BR-01 — Trial Edit Scope
 The Managing Editor may trial-edit body text, headings and captions in the interactive preview to evaluate text fit.
@@ -102,13 +84,32 @@ The DTP Specialist is responsible for marking an `Open` annotation `Resolved` on
 
 ---
 
+## 2.3. Open Questions & Further Considerations
+
+<details>
+The following aspects were considered during the analysis but intentionally left outside the scope of this mini case study:
+
+1. **Trial edit → correction creation (FR-01, FR-03):** Should submitting trial-edited text automatically create a correction annotation, or should annotation creation remain a separate action?
+2. **Lost annotation association after layout update (FR-03, FR-04):** If a text or visual element associated with an annotation no longer exists in an updated layout, should the annotation remain unassigned, be automatically reassigned where possible, or require manual reassignment by the Managing Editor?
+3. **Visibility of resolved corrections (FR-05, BR-03):** After an annotation is marked `Resolved`, should it remain visible in the Interactive Layout Preview, remain accessible only through the correction list, or be hidden entirely?
+4. **Correction list filtering (FR-05):** Should the correction list support filtering by annotation status or other criteria?
+5. **Navigation from correction list to layout (FR-05):** Should selecting an annotation in the correction list navigate the user directly to the associated text or visual element in the Interactive Layout Preview?
+6. **Access to previous layout versions (FR-04):** Should previous layout versions remain accessible after the DTP Specialist updates the Interactive Layout Preview with the latest layout version, and if so, should their associated correction annotations also remain available?
+7. **Reopening resolved corrections (FR-03, BR-03):** Should the Managing Editor be able to reopen an annotation after the DTP Specialist has marked it `Resolved`, and under what conditions?
+8. **Annotation target scope (FR-03):** Should correction annotations be limited to text and visual elements, or should additional element types be supported?
+9. **Concurrent editing and layout updates (FR-01, FR-03, FR-04):** What should happen if the Managing Editor is trial-editing text or creating an annotation while the DTP Specialist updates the Interactive Layout Preview with the latest layout version — should the in-progress work be preserved and reapplied, discarded, or temporarily blocked during the update? update?
+
+</details>
+
+---
+
 ## 2.4. Example User Stories & Acceptance Criteria
 
 ### User Story — US-01: Create annotation
 
 > **As a** Managing Editor,<br>
 > **I want** to create correction annotations,<br>
-> **so that** so that I can request corrections.
+> **so that** I can request corrections.
 
 ```gherkin
 Scenario: Creating a correction
