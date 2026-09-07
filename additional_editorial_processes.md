@@ -19,4 +19,4 @@ This BPMN diagram presents the process of handling issues reported by teachers c
 [View issue_handling source file](./process_diagram/issue_handling.bpmn)
 
 ---
-[README →](README.md) · [01 Problem & Scenario →](./01_problem_and_scenario.md) · [02 Requirements →](./02_requirements.md) · [03 Process Diagrams →](docs/03_process_diagrams.md) · **Additional editorial processes**
+[README →](README.md) · [01 Problem & Scenario →](docs/01_problem_and_scenario.md) · [02 Requirements →](docs/02_requirements.md) · [03 Process Diagrams →](docs/03_process_diagrams.md) · **Additional editorial processes**
