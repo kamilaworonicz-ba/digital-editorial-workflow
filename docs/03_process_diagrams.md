@@ -1,4 +1,4 @@
-# 3. Process Diagrams
+# 3. Process Diagrams: Editorial–DTP Revision Workflow
 
 This document compares the current AS-IS chapter revision workflow with the proposed TO-BE process supported by a shared interactive layout preview.
 
