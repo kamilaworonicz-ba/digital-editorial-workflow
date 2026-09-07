@@ -37,13 +37,7 @@ flowchart LR
     style F fill:#2e7d32,stroke:#333,stroke-width:2px,color:#fff
 ```
 
-| Step | What happens |
-|---|---|
-| **1. Process input & first DTP layout** | DTP prepares the first typeset version of the chapter from the finalised manuscript. |
-| **2. Initial layout review** | The Managing Editor reviews the typeset chapter in its actual page layout — checking whether text fits the available space and flows correctly around visual elements — marks required corrections on the printed proof, and returns it to DTP. | 
-| **3. Visual assets & captions review** | Photographs, illustrations and captions are reviewed within the surrounding layout — checking technical fit as well as visual coherence (e.g. positioning, colour clashes, caption length) — with corrections marked and returned to DTP the same way. | 
-| **4. Further revision cycles** | DTP applies the requested changes and produces an updated layout. The Managing Editor reviews it again; new issues may surface as other elements shift, so the cycle repeats until the chapter is ready. | 
-| **5. Teacher-focus testing readiness** | The Managing Editor confirms the chapter is polished enough for teacher focus-testing — not final approval, as further changes may follow from feedback. | 
+<p align="center"><em>Figure 1. AS-IS Editorial–DTP Revision Workflow.</em></p>
 
 ---
 [README →](../README.md) · **01 Problem & Scenario** · [02 Requirements →](./02_requirements.md) · [03 Process Diagrams →](./03_process_diagrams.md) · [Additional editorial processes →](../additional_editorial_processes.md)
