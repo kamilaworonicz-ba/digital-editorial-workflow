@@ -20,7 +20,7 @@ The AS-IS model shows the current paper-based revision workflow. Printed proofs 
 
 ## 3.2. TO-BE Process
 
-The TO-BE model preserves the existing revision loop while replacing printed proofs and physical handoffs with a Interactive Layout Preview.
+The TO-BE model preserves the existing revision loop while replacing printed proofs and physical handoffs with an Interactive Layout Preview.
 
 Required corrections are recorded directly in the preview and are available to the DTP Specialist. New correction annotations are automatically assigned the `Open` status. 
 After applying the requested correction to the production source file, the DTP Specialist marks the correction as `Resolved`. When the preview is updated with a new layout version, existing correction annotations and their statuses are preserved.
