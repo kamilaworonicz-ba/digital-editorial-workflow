@@ -11,9 +11,6 @@ The workflow was primarily **paper-based** 🖍. DTP produced a printed proof, t
 |---|---|---|
 | **Managing Editor** | ✅ | Reviews successive layout versions, identifies required changes, makes trial text edits, places annotations and gives sign-off |
 | **DTP Specialist (Desktop Publishing Specialist)** | ✅ | Prepares and updates the typeset page layout, places visual assets and applies accepted editorial changes to the source file |
-| Author | ❌ outside this workflow | Provides the manuscript before the DTP revision process begins |
-| Subject-matter Reviewer | ❌ outside this workflow | Reviews the content before typesetting begins |
-
 
 This created several recurring problems:
 
