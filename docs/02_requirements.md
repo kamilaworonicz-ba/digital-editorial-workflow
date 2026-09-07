@@ -8,8 +8,6 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
 
 ## 2. 1. Functional Requirements
 
-> The functional requirements below were derived from the pain points identified in the AS-IS workflow. All five are considered in scope for the proposed MVP.
-> 
 > Some requirements below combine several tightly coupled system behaviours into a single functional requirement, where splitting them would describe an incomplete or non-functional step in isolation.
 
 <table>
