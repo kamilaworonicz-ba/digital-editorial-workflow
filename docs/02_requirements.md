@@ -24,7 +24,7 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
       Even a small text correction requires DTP to update the layout before the Managing Editor can verify whether it works.
     </td>
     <td>
-The system shall allow the Managing Editor to trial-edit text, including body text, headings and captions, directly in the interactive layout preview. The system shall show whether the revised text fits the allotted space. The Managing Editor shall be able to submit the proposed text as a requested correction regardless of whether it fits. Where the text does not fit, the resulting correction shall be flagged as requiring a layout adjustment.
+The system shall allow the Managing Editor to trial-edit text, including body text, headings and captions, directly in the interactive layout preview. The system shall show whether the revised text fits the allotted space. The Managing Editor shall be able to submit the proposed text as a requested correction regardless of whether it fits.
     </td>
   </tr>
 
