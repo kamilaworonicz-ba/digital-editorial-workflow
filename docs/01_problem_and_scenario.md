@@ -6,20 +6,17 @@ Once a manuscript was typeset for the first time, it entered an iterative revisi
 The workflow was primarily **paper-based** 🖍. DTP produced a printed proof, the Managing Editor reviewed the layout and marked corrections by hand, and the marked-up pages were returned to DTP for another revision.
 
 This created several recurring problems:
-
-| Pain point | Operational impact |
-|---|---|
-| 🔍 **No live text fit-check** | Even a small text correction requires DTP to update the layout before the Managing Editor can verify whether it works |
-| 🖨️ **Paper-based page review** | Reviewing text and visual composition requires repeated printing and physical handoffs |
-| 📄 **Corrections recorded across successive proofs** | Required changes are difficult to manage as one coherent set of issues |
-| ❓ **No consolidated view of outstanding corrections** | The Managing Editor must manually determine which corrections have been completed and which still require attention |
+- 🔍 **No live text fit-check.**  Even a small text correction requires DTP to update the layout before the Managing Editor can verify whether it works.
+- 🖨️ **Paper-based page review.** Reviewing text and visual composition requires repeated printing and physical handoffs.
+- 📄 **Corrections recorded across successive proofs.** Required changes are difficult to manage as one coherent set of issues.
+- ❓ **No consolidated view of outstanding corrections.**  The Managing Editor must manually determine which corrections have been completed and which still require attention.
 
 These pain points provide the basis for the functional requirements defined in [`02_requirements.md`](./02_requirements.md).
 
-| Actor | Involved in this workflow? | Role |
+| Actor |  Role |
 |---|---|---|
-| **Managing Editor** | ✅ | Reviews successive layout versions, identifies required changes, makes trial text edits, places annotations and gives sign-off |
-| **DTP Specialist (Desktop Publishing Specialist)** | ✅ | Prepares and updates the typeset page layout, places visual assets and applies accepted editorial changes to the source file |
+| **Managing Editor** |  Reviews successive layout versions, identifies required changes, makes trial text edits, places annotations and gives sign-off |
+| **DTP Specialist (Desktop Publishing Specialist)** | Prepares and updates the typeset page layout, places visual assets and applies accepted editorial changes to the source file |
 
 ---
 
