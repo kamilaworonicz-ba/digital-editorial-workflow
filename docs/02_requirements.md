@@ -46,7 +46,7 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
       Required changes are distributed across separate marked-up proofs rather than managed as one coherent set of corrections.
     </td>
     <td>
-      The system shall allow the Managing Editor to create correction annotations, consisting of a free-text description of the required correction, linked to text or visual elements with an initial status of `Open`. The DTP Specialist shall be able to mark them as `Resolved`, and the Managing Editor to reopen them if further correction is required.
+         The system shall allow the Managing Editor to create correction annotations with a free-text description, linked to text or visual elements. New annotations shall have an initial status of `Open`, and the DTP Specialist shall be able to mark them as `Resolved`.
     </td>
   </tr>
 
@@ -82,6 +82,7 @@ The following aspects were considered during the analysis but intentionally left
 5. Should users be able to filter corrections by status or other criteria?
 6. Should the correction list provide direct navigation to the associated element in the layout?
 7. Should previous layout versions and their corrections remain accessible?
+8. Should the Managing Editor be able to reopen a correction after it has been marked as `Resolved`?
 ---
 
 ## 2.3. Business Rules
@@ -99,11 +100,11 @@ The DTP Specialist is responsible for marking an `Open` annotation `Resolved` on
 
 ## 2.4. Example User Stories & Acceptance Criteria
 
-### User Story — US-01: Managing Corrections
+### User Story — US-XYZ: Create annotation
 
 > **As a** Managing Editor,<br>
-> **I want** to create, reopen and review correction annotations for the current chapter,<br>
-> **so that** I can quickly identify which issues have been addressed and which still require attention.
+> **I want** to create correction annotations for the current chapter,<br>
+> **so that** so that I can request corrections.
 
 ```gherkin
 Scenario: Creating a correction
@@ -111,12 +112,16 @@ Scenario: Creating a correction
   When the Managing Editor creates a correction annotation
   Then the annotation is linked to that element
   And its initial status is "Open"
+```
+**Related requirements:** XYZ
 
-Scenario: Reopening a correction
-  Given an annotation has status "Resolved"
-  When the Managing Editor reopens the annotation
-  Then its status changes to "Open"
+### User Story — US-01: Managing Corrections
 
+> **As a** Managing Editor,<br>
+> **I want** to review correction annotations for the current chapter,<br>
+> **so that** I can quickly identify which issues have been addressed and which still require attention.
+
+```gherkin
 Scenario: Reviewing chapter corrections
   Given the chapter contains "Open" and "Resolved" annotations
   When the Managing Editor opens the correction list
