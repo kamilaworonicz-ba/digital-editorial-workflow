@@ -87,7 +87,7 @@ The following aspects were considered during the analysis but intentionally left
 ## 2.2. Business Rules
 
 ### BR-01 — Trial Edit Scope
-The Managing Editor may trial-edit body text, headings and captions in the interactive preview to evaluate text fit. Trial edits are visible only to the Managing Editor and do not modify the production source file or create a correction annotation.
+The Managing Editor may trial-edit body text, headings and captions in the interactive preview to evaluate text fit.
 
 ### BR-02 — Production File Ownership
 Only the DTP Specialist applies accepted text, layout and visual changes to the production source file. Changes made in the interactive preview, including trial edits, do not modify the production source file.
