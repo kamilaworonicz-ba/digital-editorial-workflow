@@ -14,7 +14,7 @@ This created several recurring problems:
 These pain points provide the basis for the functional requirements defined in [`02_requirements.md`](./02_requirements.md).
 
 | Actor |  Role |
-|---|---|---|
+|---|---|
 | **Managing Editor** |  Reviews successive layout versions, identifies required changes, makes trial text edits, places annotations and gives sign-off |
 | **DTP Specialist (Desktop Publishing Specialist)** | Prepares and updates the typeset page layout, places visual assets and applies accepted editorial changes to the source file |
 
