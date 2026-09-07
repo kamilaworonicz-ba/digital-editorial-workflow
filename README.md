@@ -19,16 +19,15 @@ The typical AS-IS revision loop was:
 
 ## 💡 Problem & Goal
 
-The paper-based revision process made it difficult to test text fit, review page composition and track outstanding corrections without repeatedly printing updated proofs.
-
 Key problems included:
+
 - inability to test whether revised text would fit before DTP rebuilt the page,
 - repeated printing of updated layouts,
-- corrections scattered across handwritten paper proofs.
+ -corrections scattered across handwritten paper proofs.
 
 **Goal:** reduce paper-based handoffs and make the revision loop faster, clearer and easier to track through a shared interactive layout preview.
 
-The proposed solution targets these problems through an interactive layout preview that allows the Managing Editor to review page composition, test text fit and track corrections without relying on physical handoffs.
+The proposed solution is an **Interactive Layout Preview** designed to address the problems identified above.
 
 ---
 
@@ -47,7 +46,7 @@ The proposed solution targets these problems through an interactive layout previ
 **In scope:**
 
 - Shared interactive layout preview for the Managing Editor and DTP Specialist
-- Text-only trial editing for body text, headings and captions
+- Text-only trial editing for body text, headings, and captions for figures and charts
 - Review of photographs, illustrations and captions within the full page layout
 - Digital annotations with `Open` / `Resolved` status
 - Consolidated tracking of outstanding corrections with direct navigation to their location
@@ -66,8 +65,8 @@ The proposed solution targets these problems through an interactive layout previ
 |---|---|
 | [`01_problem_and_scenario.md`](docs/01_problem_and_scenario.md) |	AS-IS problem, scenario and pain points |
 | [`02_requirements.md`](docs/02_requirements.md) | Functional requirements, business rules, user stories, acceptance criteria and traceability |
-| [`03_process_diagrams.md`](docs/03_process_diagrams.md) | AS-IS and proposed TO-BE BPMN process models |
-| [`additional_editorial_processes.md`](additional_editorial_processes.md)| BPMN models of other editorial processes outside the scope of this case study |
+| [`03_process_diagrams.md`](docs/03_process_diagrams.md) | AS-IS and proposed TO-BE BPMN process diagrams |
+| [`additional_editorial_processes.md`](additional_editorial_processes.md)| BPMN diagrams of other editorial processes outside the scope of this case study |
 
 ---
 
