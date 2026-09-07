@@ -2,6 +2,8 @@
 
 ## 1.1. AS-IS Problem
 
+This case study covers the revision loop from the initial page layout to the point when the materials are ready for teacher focus testing.
+
 Once a manuscript was typeset for the first time, it entered an iterative revision loop between the **Managing Editor** and the **DTP Specialist**.
 The workflow was primarily **paper-based** 🖍. DTP produced a printed proof, the Managing Editor reviewed the layout and marked corrections by hand, and the marked-up pages were returned to DTP for another revision.
 
@@ -15,8 +17,8 @@ These pain points provide the basis for the functional requirements defined in [
 
 | Actor |  Role |
 |---|---|
-| **Managing Editor** |  Reviews successive layout versions, identifies required changes, makes trial text edits, places annotations and gives sign-off |
-| **DTP Specialist (Desktop Publishing Specialist)** | Prepares and updates the typeset page layout, places visual assets and applies accepted editorial changes to the source file |
+| **Managing Editor** |  Reviews successive layout versions, identifies and marks required changes, and confirms readiness for teacher focus testing |
+| **DTP Specialist (Desktop Publishing Specialist)** | Prepares and updates the typeset page layout, places visual assets and applies editorial changes to the source file |
 
 ---
 
