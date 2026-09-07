@@ -5,13 +5,6 @@
 Once a manuscript was typeset for the first time, it entered an iterative revision loop between the **Managing Editor** and the **DTP Specialist**.
 The workflow was primarily **paper-based** 🖍. DTP produced a printed proof, the Managing Editor reviewed the layout and marked corrections by hand, and the marked-up pages were returned to DTP for another revision.
 
-## 1. Actors
-
-| Actor | Involved in this workflow? | Role |
-|---|---|---|
-| **Managing Editor** | ✅ | Reviews successive layout versions, identifies required changes, makes trial text edits, places annotations and gives sign-off |
-| **DTP Specialist (Desktop Publishing Specialist)** | ✅ | Prepares and updates the typeset page layout, places visual assets and applies accepted editorial changes to the source file |
-
 This created several recurring problems:
 
 | Pain point | Operational impact |
@@ -22,6 +15,11 @@ This created several recurring problems:
 | ❓ **No consolidated view of outstanding corrections** | The Managing Editor must manually determine which corrections have been completed and which still require attention |
 
 These pain points provide the basis for the functional requirements defined in [`02_requirements.md`](./02_requirements.md).
+
+| Actor | Involved in this workflow? | Role |
+|---|---|---|
+| **Managing Editor** | ✅ | Reviews successive layout versions, identifies required changes, makes trial text edits, places annotations and gives sign-off |
+| **DTP Specialist (Desktop Publishing Specialist)** | ✅ | Prepares and updates the typeset page layout, places visual assets and applies accepted editorial changes to the source file |
 
 ---
 
