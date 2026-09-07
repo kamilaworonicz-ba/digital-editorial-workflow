@@ -67,6 +67,7 @@ The proposed solution targets these problems through an interactive layout previ
 | [`01_problem_and_scenario.md`](docs/01_problem_and_scenario.md) |	AS-IS problem, scenario and pain points |
 | [`02_requirements.md`](docs/02_requirements.md) | Functional requirements, business rules, user stories, acceptance criteria and traceability |
 | [`03_process_diagrams.md`](docs/03_process_diagrams.md) | AS-IS and proposed TO-BE BPMN process models |
+| [`additional_editorial_processes.md`](additional_editorial_processes.md)| BPMN models of other editorial processes outside the scope of this case study |
 
 ---
 
@@ -80,5 +81,5 @@ Business Analyst | Product Manager *(career transition)*
 - Location: Gdańsk, Poland
 
 ---
-**README** · [01 Problem & Scenario →](./01_problem_and_scenario.md) · [02 Requirements →](./02_requirements.md) · [03 Process Diagrams →](docs/03_process_diagrams.md)
+**README** · [01 Problem & Scenario →](./01_problem_and_scenario.md) · [02 Requirements →](./02_requirements.md) · [03 Process Diagrams →](docs/03_process_diagrams.md) · [Additional editorial processes →](additional_editorial_processes.md)
 
