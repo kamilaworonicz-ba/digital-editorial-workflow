@@ -55,4 +55,7 @@ flowchart LR
 | **4. Further revision cycles** | DTP applies the requested changes and produces an updated layout. The Managing Editor reviews it again; new issues may surface as other elements shift, so the cycle repeats until the chapter is ready. | 
 | **5. Teacher-focus testing readiness** | The Managing Editor confirms the chapter is polished enough for teacher focus-testing — not final approval, as further changes may follow from feedback. | 
 
+---
+[README →](./README.md) · **01 Problem & Scenario** · [02 Requirements →](./02_requirements.md) · [03 Process Diagrams →](docs/03_process_diagrams.md) · [Additional editorial processes →](additional_editorial_processes.md)
+
 
