@@ -60,7 +60,7 @@ The system shall allow the Managing Editor to trial-edit text, including body te
   </tr>
 
   <tr>
-    <td><strong>FR-04</strong></td>
+    <td><strong>FR-05</strong></td>
     <td>
       ❓ <strong>No consolidated view of outstanding corrections.</strong>
       Determining which corrections have been addressed and which still require attention requires manual comparison of successive proofs.
@@ -104,7 +104,7 @@ Scenario: Reviewing outstanding corrections
   And the Managing Editor can filter the list to show only "Open" annotations
   And selecting an annotation whose associated element is available takes the Managing Editor to that element in the Interactive Layout Preview
 ```
-**Related requirements:** BR-03, FR-03, FR-04 
+**Related requirements:** BR-03, FR-03, FR-05 
 
 ---
 
@@ -132,7 +132,7 @@ Scenario: Completing a requested correction
   And the updated status is visible to the Managing Editor
 ```
 
-**Related requirements:** BR-02, BR-03, FR-02, FR-03, FR-04
+**Related requirements:** BR-02, BR-03, FR-02, FR-03, FR-05
 
 ---
 
@@ -256,7 +256,7 @@ Scenario: "Resolved" annotation target no longer exists
 
   <tr>
     <td>❓ <strong>No consolidated view of outstanding corrections</strong></td>
-    <td>FR-04</td>
+    <td>FR-05</td>
     <td>—</td>
     <td>US-01, US-02</td>
   </tr>
