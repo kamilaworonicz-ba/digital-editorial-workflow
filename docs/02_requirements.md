@@ -76,13 +76,13 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
 The following aspects were considered during the analysis but intentionally left outside the scope of this mini case study:
 
 1. Should submitting trial-edited text automatically create a correction annotation?
-2. What should happen to annotations if the associated text or visual element no longer exists in a new layout version?
-3. Should the Managing Editor be able to manually reassign such annotations to another element?
-4. Should resolved corrections remain visible in the layout, or only in the correction list?
-5. Should users be able to filter corrections by status or other criteria?
-6. Should the correction list provide direct navigation to the associated element in the layout?
-7. Should previous layout versions and their corrections remain accessible?
-8. Should the Managing Editor be able to reopen a correction after it has been marked as `Resolved`?
+2. What should happen to annotations if the associated text or visual element no longer exists in a new layout version? Should the Managing Editor be able to manually reassign such annotations to another element?
+3. Should resolved corrections remain visible in the layout, or only in the correction list?
+4. Should users be able to filter corrections by status or other criteria?
+5. Should the correction list provide direct navigation to the associated element in the layout?
+6. Should previous layout versions and their corrections remain accessible?
+7. Should the Managing Editor be able to reopen a correction after it has been marked as `Resolved`?
+8. Should annotations be assignable to other element types besides text and visual elements?
 ---
 
 ## 2.3. Business Rules
