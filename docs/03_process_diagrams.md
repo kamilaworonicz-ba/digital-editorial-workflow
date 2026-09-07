@@ -52,3 +52,6 @@ The proposed TO-BE process is intended to:
 - reduce unnecessary DTP iterations caused by text-fit issues,
 - provide both roles with a shared view of the current layout and correction status,
 - shorten the overall chapter revision cycle while preserving DTP ownership of the production source file.
+
+---
+[README →](../README.md) · [01 Problem & Scenario →](./01_problem_and_scenario.md) · [02 Requirements](./02_requirements.md) · **03 Process Diagrams** · [Additional editorial processes →](../additional_editorial_processes.md)
