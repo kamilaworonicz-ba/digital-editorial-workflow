@@ -24,7 +24,7 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
       Even a small text correction requires DTP to update the layout before the Managing Editor can verify whether it works.
     </td>
     <td>
-The system shall allow the Managing Editor to trial-edit text, including body text, headings and captions, directly in the interactive layout preview. The system shall show whether the revised text fits the allotted space. The Managing Editor shall be able to submit the proposed text as a requested correction regardless of whether it fits.
+      The system shall allow the Managing Editor to trial-edit body text, headings and captions in the interactive layout preview and show whether the revised text fits the allotted space.
     </td>
   </tr>
 
@@ -35,7 +35,7 @@ The system shall allow the Managing Editor to trial-edit text, including body te
       Reviewing text and visual composition requires repeated printing and physical handoffs between the Managing Editor and DTP Specialist.
     </td>
     <td>
-      The system shall display the complete current page layout, including text, photographs, illustrations and captions, in a shared interactive preview accessible to both the Managing Editor and the DTP Specialist.
+          The system shall display the current page layout, including text, photographs, illustrations and captions, in a shared interactive preview accessible to both the Managing Editor and the DTP Specialist.
     </td>
   </tr>
 
@@ -46,14 +46,14 @@ The system shall allow the Managing Editor to trial-edit text, including body te
       Required changes are distributed across separate marked-up proofs rather than managed as one coherent set of corrections.
     </td>
     <td>
-      The system shall allow the Managing Editor to create an annotation — linked to a text or visual element, or automatically generated from submitted trial-edited text — describing the required correction, with an initial status of `Open`. The system shall allow the DTP Specialist to mark an annotation `Resolved`, and the Managing Editor to reopen it if further correction is required.
+      The system shall allow the Managing Editor to create correction annotations linked to text or visual elements with an initial status of `Open`. The DTP Specialist shall be able to mark them as `Resolved`, and the Managing Editor to reopen them if further correction is required.
     </td>
   </tr>
 
   <tr>
     <td><strong>FR-04</strong></td>
     <td>
-    The system shall allow the DTP Specialist to update the interactive preview with the latest production layout while preserving existing annotations, their statuses and associations. If an associated element is no longer available, an `Open` annotation shall remain `Open` and be flagged for reassignment. The Managing Editor may manually reassign it to another text or visual element. A `Resolved` annotation shall remain `Resolved` and accessible from the correction list, but shall no longer be displayed in the current layout.
+   The system shall allow the DTP Specialist to update the interactive preview with the latest layout version while preserving existing correction annotations and their statuses.
     </td>
   </tr>
 
@@ -64,20 +64,33 @@ The system shall allow the Managing Editor to trial-edit text, including body te
       Determining which corrections have been addressed and which still require attention requires manual comparison of successive proofs.
     </td>
     <td>
-     The system shall provide both the Managing Editor and the DTP Specialist with a consolidated list of annotations for the current chapter, showing their status, allowing filtering by status and providing direct navigation to the associated text or visual element where that element is available in the current layout.
+    The system shall provide both the Managing Editor and the DTP Specialist with a consolidated list of correction annotations for the current chapter, showing their status.
     </td>
   </tr>
 </table>
 
 ---
 
+## 2.2. Open Questions & Further Considerations
+
+The following aspects were considered during the analysis but intentionally left outside the scope of this mini case study:
+
+1. Should submitting trial-edited text automatically create a correction annotation?
+2. What should happen to annotations if the associated text or visual element no longer exists in a new layout version?
+3. Should the Managing Editor be able to manually reassign such annotations to another element?
+4. Should resolved corrections remain visible in the layout, or only in the correction list?
+5. Should users be able to filter corrections by status or other criteria?
+6. Should the correction list provide direct navigation to the associated element in the layout?
+7. Should previous layout versions and their corrections remain accessible?
+---
+
 ## 2.2. Business Rules
 
 ### BR-01 — Trial Edit Scope
-The Managing Editor may trial-edit body text, headings and captions in the interactive preview to evaluate text fit and submit it as a requested correction. Trial edits are visible only to the Managing Editor and are not shared with the DTP Specialist unless submitted as a requested correction. The Managing Editor cannot reposition, resize or otherwise modify layout or visual elements in the preview.
+The Managing Editor may trial-edit body text, headings and captions in the interactive preview to evaluate text fit. Trial edits are visible only to the Managing Editor and do not modify the production source file or create a correction annotation.
 
 ### BR-02 — Production File Ownership
-Only the DTP Specialist applies accepted text, layout and visual changes to the production source file. Changes made in the interactive preview do not modify the production source file.
+Only the DTP Specialist applies accepted text, layout and visual changes to the production source file. Changes made in the interactive preview, including trial edits, do not modify the production source file.
 
 ### BR-03 — Correction Resolution
 The DTP Specialist may change an annotation's status from `Open` to `Resolved` only after applying the requested correction to the production source file.
