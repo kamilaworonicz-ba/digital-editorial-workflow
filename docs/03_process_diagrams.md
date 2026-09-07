@@ -1,8 +1,8 @@
 # 3. Process Diagrams: Editorial–DTP Revision Workflow
 
-This document compares the current AS-IS chapter revision workflow with the proposed TO-BE process supported by a shared interactive layout preview.
+This document compares the current AS-IS chapter revision workflow with the proposed TO-BE process supported by the proposed solution, a shared Interactive layout preview.
 
-The overall revision cycle remains unchanged: the Managing Editor reviews the layout, required corrections are applied by the DTP Specialist, and the updated version is reviewed again until the material is ready for teacher focus-testing. The proposed solution changes how corrections are communicated, tracked and verified.
+The overall revision cycle remains unchanged: the Managing Editor reviews the layout, required corrections are applied by the DTP Specialist, and the updated version is reviewed again until the material is ready for teacher focus testing. The proposed solution changes how corrections are communicated, tracked and verified.
 
 ---
 
@@ -22,7 +22,7 @@ The AS-IS model shows the current paper-based revision workflow. Printed proofs 
 
 The TO-BE model preserves the existing revision loop while replacing printed proofs and physical handoffs with a shared interactive layout preview.
 
-Required corrections are recorded directly in the preview and are available to the DTP Specialist. New correction annotations are automatically assigned the `Open` status. After applying the requested correction to the production layout, the DTP Specialist marks the correction as `Resolved`. A resolved correction may be reopened if further changes are required during the next review.
+Required corrections are recorded directly in the preview and are available to the DTP Specialist. New correction annotations are automatically assigned the `Open` status. After applying the requested correction to the production layout, the DTP Specialist marks the correction as `Resolved`.
 
 ![TO-BE chapter revision process](../process_diagram/BPMN_TO-BE_editorial.svg)
 
