@@ -84,7 +84,7 @@ The following aspects were considered during the analysis but intentionally left
 7. Should previous layout versions and their corrections remain accessible?
 ---
 
-## 2.2. Business Rules
+## 2.3. Business Rules
 
 ### BR-01 — Trial Edit Scope
 The Managing Editor may trial-edit body text, headings and captions in the interactive preview to evaluate text fit.
@@ -97,15 +97,26 @@ The DTP Specialist is responsible for marking an `Open` annotation `Resolved` on
 
 ---
 
-## 2.3. Example User Stories & Acceptance Criteria
+## 2.4. Example User Stories & Acceptance Criteria
 
-### User Story — US-01: Viewing Correction Statuses
+### User Story — US-01: Managing Corrections
 
 > **As a** Managing Editor,<br>
-> **I want** to see all corrections raised for the current chapter together with their status,<br>
+> **I want** to create, reopen and review correction annotations for the current chapter,<br>
 > **so that** I can quickly identify which issues have been addressed and which still require attention.
 
 ```gherkin
+Scenario: Creating a correction
+  Given the Managing Editor is reviewing a text or visual element
+  When the Managing Editor creates a correction annotation
+  Then the annotation is linked to that element
+  And its initial status is "Open"
+
+Scenario: Reopening a correction
+  Given an annotation has status "Resolved"
+  When the Managing Editor reopens the annotation
+  Then its status changes to "Open"
+
 Scenario: Reviewing chapter corrections
   Given the chapter contains "Open" and "Resolved" annotations
   When the Managing Editor opens the correction list
@@ -176,7 +187,7 @@ Scenario: Updating the preview with a new layout version
 
 ---
 
-## 2.4. Requirements Traceability Summary
+## 2.5. Requirements Traceability Summary
 
 <table>
   <tr>
@@ -204,11 +215,11 @@ Scenario: Updating the preview with a new layout version
     <td rowspan="2">📄 <strong>Corrections recorded across successive proofs</strong></td>
     <td>FR-03</td>
     <td>BR-03</td>
-    <td>US-01, US-02, US-03</td>
+    <td>US-02</td>
   </tr>
 
   <tr>
-    <td>FR-05</td>
+    <td>FR-04</td>
     <td>—</td>
     <td>US-04</td>
   </tr>
@@ -217,26 +228,13 @@ Scenario: Updating the preview with a new layout version
     <td>❓ <strong>No consolidated view of outstanding corrections</strong></td>
     <td>FR-05</td>
     <td>—</td>
-    <td>US-01, US-02</td>
+    <td>US-01</td>
   </tr>
 </table>
 
 ---
-### Illustrative NFRs
 
-> The values below are illustrative acceptance targets and would require validation with stakeholders and the technical team.
-
-| ID | Category | Illustrative NFR |
-|---|---|---|
-| NFR-01|	Performance	| The interactive layout preview shall load within 3 seconds, consistent with common UX benchmarks for perceived responsiveness. |
-| NFR-02 | Performance | Annotations shall sync in near real-time (target: within 1 second) to support simultaneous review — informed by experience with a similar internal tool, where slower refresh times were a recurring source of user frustration.|
-| NFR-03 | Usability | A Managing Editor or DTP Specialist shall be able to locate an open correction and navigate to its position in the layout within three user interactions from the correction list. |
----
-These requirements derive from the AS-IS workflow described in [`01_problem_and_scenario.md`](./01_problem_and_scenario.md) and are reflected in the AS-IS and proposed TO-BE process models in [`03_process_diagrams.md`](./03_process_diagrams.md).
-
----
-
-### Illustrative NFRs
+### 2.6. Illustrative NFRs
 
 > The values below are illustrative acceptance targets and would require validation with stakeholders and the technical team.
 
@@ -247,5 +245,6 @@ These requirements derive from the AS-IS workflow described in [`01_problem_and_
 | NFR-03 | Usability | A Managing Editor or DTP Specialist shall be able to locate an open correction and navigate to its position in the layout within three user interactions from the correction list. |
 
 ---
+
 [README →](../README.md) · [01 Problem & Scenario →](./01_problem_and_scenario.md) · **02 Requirements** · [03 Process Diagrams →](./03_process_diagrams.md) · [Additional editorial processes →](../additional_editorial_processes.md)
 
