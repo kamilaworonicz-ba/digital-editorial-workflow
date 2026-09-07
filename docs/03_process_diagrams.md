@@ -1,14 +1,14 @@
 # 3. Process Diagrams: Editorial–DTP Revision Workflow
 
-This document compares the current AS-IS chapter revision workflow with the proposed TO-BE process supported by the proposed solution, a shared Interactive layout preview.
+This document compares the AS-IS chapter revision workflow with the proposed TO-BE process supported by a shared Interactive Layout Preview.
 
-The overall revision cycle remains unchanged: the Managing Editor reviews the layout, required corrections are applied by the DTP Specialist, and the updated version is reviewed again until the material is ready for teacher focus testing. The proposed solution changes how corrections are communicated, tracked and verified.
+The overall revision cycle remains unchanged: the Managing Editor reviews the layout, required corrections are applied by the DTP Specialist, and the updated version is reviewed again until the material is ready for teacher focus testing. The proposed solution changes how corrections are communicated, tracked and managed.
 
 ---
 
 ## 3.1. AS-IS Process
 
-The AS-IS model shows the current paper-based revision workflow. Printed proofs are used to review the layout, corrections are marked and numbered manually, and the marked-up proof is physically handed over to the DTP Specialist.
+The AS-IS model shows the current paper-based revision workflow. Printed proofs are used to review the layout, corrections are marked manually, and the marked-up proof is physically handed over to the DTP Specialist.
 
 ![AS-IS chapter revision process](../process_diagram/BPMN_AS-IS_editorial.svg)
 
@@ -20,9 +20,10 @@ The AS-IS model shows the current paper-based revision workflow. Printed proofs 
 
 ## 3.2. TO-BE Process
 
-The TO-BE model preserves the existing revision loop while replacing printed proofs and physical handoffs with a shared interactive layout preview.
+The TO-BE model preserves the existing revision loop while replacing printed proofs and physical handoffs with a Interactive Layout Preview.
 
-Required corrections are recorded directly in the preview and are available to the DTP Specialist. New correction annotations are automatically assigned the `Open` status. After applying the requested correction to the production layout, the DTP Specialist marks the correction as `Resolved`.
+Required corrections are recorded directly in the preview and are available to the DTP Specialist. New correction annotations are automatically assigned the `Open` status. 
+After applying the requested correction to the production source file, the DTP Specialist marks the correction as `Resolved`. When the preview is updated with a new layout version, existing correction annotations and their statuses are preserved.
 
 ![TO-BE chapter revision process](../process_diagram/BPMN_TO-BE_editorial.svg)
 
@@ -34,10 +35,10 @@ Required corrections are recorded directly in the preview and are available to t
 
 | AS-IS Limitation | TO-BE Change |
 |---|---|
-| Printed proofs are required for each review cycle. | The Managing Editor reviews the current layout directly in the shared interactive preview. |
+| Printed proofs are required for each review cycle. | The Managing Editor reviews the current layout directly in the Interactive Layout Preview. |
 | Corrections are manually marked on printed proofs. | Corrections are recorded as location-specific annotations and tracked digitally. |
 | Marked-up proofs must be physically handed over to the DTP Specialist. | Recorded corrections are available to the DTP Specialist in the shared system. |
-| Updated layouts must be printed again before the Managing Editor can verify the changes. | Updated layouts can be reviewed directly in the interactive preview. |
+| Updated layouts must be printed again before the Managing Editor can verify the changes. | Updated layouts can be reviewed directly in the Interactive Layout Preview. |
 | Outstanding corrections must be identified by comparing successive printed proofs. | Corrections are tracked using `Open` and `Resolved` statuses and can be reviewed in a consolidated correction list. |
 | Testing whether revised text fits the available layout space requires another DTP iteration. | The Managing Editor can trial-edit text in the preview to verify text fit before requesting a change to the production file. |
 
