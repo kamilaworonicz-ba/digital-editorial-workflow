@@ -21,7 +21,7 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
     <td><strong>FR-01</strong></td>
     <td>
       🔍 <strong>No live text fit-check.</strong>
-      Even a small text correction requires the DTP Specialist to update the layout before the Managing Editor can verify whether it works.
+     The Managing Editor cannot verify whether revised text fits the available space without an updated layout from the DTP Specialist.
     </td>
     <td>
       The system shall allow the Managing Editor to trial-edit body text, headings and captions in the Interactive Layout Preview and show whether the revised text fits the allotted space.
@@ -73,13 +73,10 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
 
 ## 2.2. Business Rules
 
-### BR-01 — Trial Edit Scope
-The Managing Editor may trial-edit body text, headings and captions in the Interactive Layout Preview to evaluate text fit.
-
-### BR-02 — Production File Ownership
+### BR-01 — Production File Ownership
 Only the DTP Specialist applies accepted text, layout and visual changes to the production source file. Changes made in the Interactive Layout Preview, including trial edits, do not modify the production source file.
 
-### BR-03 — Correction Resolution
+### BR-02 — Correction Resolution
 The DTP Specialist is responsible for marking an `Open` annotation `Resolved` only after applying the correction to the production source file. The system does not verify that the described correction has been made.
 
 ---
@@ -91,11 +88,11 @@ The following aspects were considered during the analysis but intentionally left
 
 1. **Trial edit → correction creation (FR-01, FR-03):** Should submitting trial-edited text automatically create a correction annotation, or should annotation creation remain a separate action?
 2. **Lost annotation association after layout update (FR-03, FR-04):** If a text or visual element associated with an annotation no longer exists in an updated layout, should the annotation remain unassigned, be automatically reassigned where possible, or require manual reassignment by the Managing Editor?
-3. **Visibility of resolved corrections (FR-05, BR-03):** After an annotation is marked `Resolved`, should it remain visible in the Interactive Layout Preview, remain accessible only through the correction list, or be hidden entirely?
+3. **Visibility of resolved corrections (FR-05, BR-02):** After an annotation is marked `Resolved`, should it remain visible in the Interactive Layout Preview, remain accessible only through the correction list, or be hidden entirely?
 4. **Correction list filtering (FR-05):** Should the correction list support filtering by annotation status or other criteria?
 5. **Navigation from correction list to layout (FR-05):** Should selecting an annotation in the correction list navigate the user directly to the associated text or visual element in the Interactive Layout Preview?
 6. **Access to previous layout versions (FR-04):** Should previous layout versions remain accessible after the DTP Specialist updates the Interactive Layout Preview with the latest layout version, and if so, should their associated correction annotations also remain available?
-7. **Reopening resolved corrections (FR-03, BR-03):** Should the Managing Editor be able to reopen an annotation after the DTP Specialist has marked it `Resolved`, and under what conditions?
+7. **Reopening resolved corrections (FR-03, BR-02):** Should the Managing Editor be able to reopen an annotation after the DTP Specialist has marked it `Resolved`, and under what conditions?
 8. **Annotation target scope (FR-03):** Should correction annotations be limited to text and visual elements, or should additional element types be supported?
 9. **Concurrent editing and layout updates (FR-01, FR-03, FR-04):** What should happen if the Managing Editor is trial-editing text or creating an annotation while the DTP Specialist updates the Interactive Layout Preview with the latest layout version — should the in-progress work be preserved and reapplied, discarded, or temporarily blocked during the update?
 
@@ -105,7 +102,7 @@ The following aspects were considered during the analysis but intentionally left
 
 ## 2.4. Example User Stories & Acceptance Criteria
 
-### User Story — US-01: Create annotation
+### User Story — US-01: Creating a correction
 
 > **As a** Managing Editor,<br>
 > **I want** to create correction annotations,<br>
@@ -120,14 +117,14 @@ Scenario: Creating a correction
 ```
 **Related requirements:** FR-03
 
-### User Story — US-02: Managing Corrections
+### User Story — US-02: Reviewing the consolidated corrections list
 
 > **As a** \<role\>,<br>
 > **I want** to review correction annotations for the current chapter,<br>
 > **so that** I can quickly identify which issues have been addressed and which still require attention.
 
 ```gherkin
-Scenario Outline: Reviewing chapter corrections
+Scenario Outline: Reviewing the consolidated corrections list
   Given the chapter contains "Open" and "Resolved" annotations
   When the <role> opens the correction list
   Then all correction annotations for the current chapter are displayed
@@ -138,11 +135,10 @@ Examples:
     | Managing Editor   |
     | DTP Specialist    |
 ```
-**Related requirements:** FR-03, FR-05
+**Related requirements:** FR-05
 
----
 
-### User Story — US-03: Handling Annotated Corrections
+### User Story — US-03: Applying and resolving corrections in the layout
 
 > **As a** DTP Specialist,<br>
 > **I want** to see requested corrections at the relevant text or visual elements in the current page layout, <br>
@@ -161,11 +157,10 @@ Scenario: Completing a requested correction
   And the updated status is visible to the Managing Editor
 ```
 
-**Related requirements:** BR-02, BR-03, FR-02, FR-03
+**Related requirements:** BR-02, FR-02, FR-03
 
----
 
-### User Story — US-04: Text Fit Check
+### User Story — US-04: Checking whether revised text fits
 
 > **As a** Managing Editor,  <br>
 > **I want** to trial-edit text directly in the Interactive Layout Preview,  <br>
@@ -179,9 +174,9 @@ Scenario: Checking whether revised text fits
   And the production source file remains unchanged
 ```
 
-**Related requirements:** BR-01, BR-02, FR-01
+**Related requirements:** BR-01, FR-01
 
-### User Story — US-05: Updating the Layout Preview
+### User Story — US-05: Updating the preview with a new layout version
 
 > **As a** DTP Specialist,<br>
 > **I want** to update the Interactive Layout Preview with the latest production layout,<br>
@@ -196,7 +191,7 @@ Scenario: Updating the preview with a new layout version
   And they retain their current status
 ```
 
-**Related requirements:** FR-04
+**Related requirements:** FR-04, FR-02
 
 ---
 
@@ -213,7 +208,7 @@ Scenario: Updating the preview with a new layout version
   <tr>
     <td>🔍 <strong>No live text fit-check</strong></td>
     <td>FR-01</td>
-    <td>BR-01, BR-02</td>
+    <td>BR-01</td>
     <td>US-04</td>
   </tr>
 
@@ -221,14 +216,14 @@ Scenario: Updating the preview with a new layout version
     <td>🖨️ <strong>Paper-based page review</strong></td>
     <td>FR-02</td>
     <td>—</td>
-    <td>US-03</td>
+    <td>US-03, US-05</td>
   </tr>
 
   <tr>
     <td rowspan="2">📄 <strong>Corrections recorded across successive proofs</strong></td>
     <td>FR-03</td>
-    <td>BR-03</td>
-    <td>US-01, US-02, US-03</td>
+    <td>BR-02</td>
+    <td>US-01, US-03</td>
   </tr>
 
   <tr>
