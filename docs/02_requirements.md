@@ -109,7 +109,7 @@ The following aspects were considered during the analysis but intentionally left
 > **so that** I can request corrections.
 
 <details>
-<summary>Zobacz pełny scenariusz Gherkin dla US-01</summary>
+<summary>View acceptance criteria</summary>
 
 ```gherkin
 Scenario: Creating a correction
@@ -123,12 +123,12 @@ Scenario: Creating a correction
 
 ### User Story — US-02: Reviewing the consolidated corrections list
 
-> **As a** \<role\>,<br>
+> **As a** Managing Editor or DTP Specialist,<br>
 > **I want** to review correction annotations for the current chapter,<br>
 > **so that** I can quickly identify which issues have been addressed and which still require attention.
 
 <details>
-<summary>Zobacz pełny scenariusz Gherkin dla US-02</summary>
+<summary>View acceptance criteria</summary>
 
 ```gherkin
 Scenario Outline: Reviewing the consolidated corrections list
@@ -145,14 +145,14 @@ Examples:
 **Related requirements:** FR-05
 </details>
 
-### User Story — US-03: Applying and resolving corrections in the layout
+### User Story — US-03: Applying and resolving corrections
 
 > **As a** DTP Specialist,<br>
 > **I want** to see requested corrections at the relevant text or visual elements in the current page layout, <br>
 > **so that** I can apply them accurately without relying on marked-up printed proofs.
 
 <details>
-<summary>Zobacz pełny scenariusz Gherkin dla US-03</summary>
+<summary>View acceptance criteria</summary>
 
 ```gherkin
 Scenario: Reviewing a requested correction
@@ -176,7 +176,7 @@ Scenario: Completing a requested correction
 > **so that** I can check whether a proposed wording change fits before asking the DTP Specialist to apply it to the production file.
 
 <details>
-<summary>Zobacz pełny scenariusz Gherkin dla US-04</summary>
+<summary>View acceptance criteria</summary>
 
 ```gherkin
 Scenario: Checking whether revised text fits
@@ -195,7 +195,7 @@ Scenario: Checking whether revised text fits
 > **so that** the Managing Editor can review the current version while existing corrections remain traceable.
 
 <details>
-<summary>Zobacz pełny scenariusz Gherkin dla US-05</summary>
+<summary>View acceptance criteria</summary>
 
 ```gherkin
 Scenario: Updating the preview with a new layout version
