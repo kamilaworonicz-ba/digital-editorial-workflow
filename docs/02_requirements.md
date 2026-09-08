@@ -6,7 +6,7 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
 
 ---
 
-## 2. 1. Functional Requirements
+## 2.1. Functional Requirements
 
 > For conciseness, closely related system behaviours are grouped into a small number of functional requirements.
 
@@ -127,7 +127,7 @@ Scenario: Creating a correction
 > **so that** I can quickly identify which issues have been addressed and which still require attention.
 
 ```gherkin
-Scenario: Reviewing chapter corrections
+Scenario Outline: Reviewing chapter corrections
   Given the chapter contains "Open" and "Resolved" annotations
   When the <role> opens the correction list
   Then all correction annotations for the current chapter are displayed
