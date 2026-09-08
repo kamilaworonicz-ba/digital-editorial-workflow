@@ -1,0 +1,58 @@
+# 3. Process Diagrams: Editorial–DTP Revision Workflow
+
+This document compares the AS-IS chapter revision workflow with the proposed TO-BE process supported by a shared Interactive Layout Preview.
+
+The overall revision cycle remains unchanged: the Managing Editor reviews the layout, required corrections are applied by the DTP Specialist, and the updated version is reviewed again until the material is ready for teacher focus testing. The proposed solution changes how corrections are communicated, tracked and managed.
+
+---
+
+## 3.1. AS-IS Process
+
+The AS-IS model shows the current paper-based revision workflow, ending with material ready for teacher-focus testing. Printed proofs are used to review the layout, and corrections are marked manually and handed over to the DTP Specialist. If further corrections are needed, the cycle repeats with a newly printed proof — each round producing a separate, disconnected marked-up document.
+
+![AS-IS chapter revision process](../process_diagram/BPMN_AS-IS_editorial.svg)
+
+>**Legend:** Highlighted activities are eliminated in the proposed TO-BE process. Other activities may remain but be performed digitally.
+
+[View AS-IS BPMN source file](../process_diagram/BPMN_AS-IS_editorial.bpmn)
+
+---
+
+## 3.2. TO-BE Process
+
+The TO-BE model preserves the existing revision loop while replacing printed proofs and physical handoffs with an Interactive Layout Preview.
+
+Required corrections are recorded directly in the preview and are available to the DTP Specialist. New correction annotations are automatically assigned the `Open` status. 
+After applying the requested correction to the production source file, the DTP Specialist marks the correction as `Resolved`. When the preview is updated with a new layout version, existing correction annotations and their statuses are preserved.
+
+![TO-BE chapter revision process](../process_diagram/BPMN_TO-BE_editorial.svg)
+
+[View TO-BE BPMN source file](../process_diagram/BPMN_TO-BE_editorial.bpmn)
+
+---
+
+## 3.3. AS-IS vs TO-BE — Key Process Changes
+
+| AS-IS Limitation | TO-BE Change |
+|---|---|
+| Printed proofs are required for each review cycle. | The Managing Editor reviews the current layout directly in the Interactive Layout Preview. |
+| Corrections are manually marked on printed proofs. | Corrections are recorded as location-specific annotations and tracked digitally. |
+| Marked-up proofs must be physically handed over to the DTP Specialist. | Recorded corrections are available to the DTP Specialist in the shared system. |
+| Updated layouts must be printed again before the Managing Editor can verify the changes. | Updated layouts can be reviewed directly in the Interactive Layout Preview. |
+| Outstanding corrections must be identified by comparing successive printed proofs. | Corrections are tracked using `Open` and `Resolved` statuses and can be reviewed in a consolidated correction list. |
+| Testing whether revised text fits the available layout space requires another DTP iteration. | The Managing Editor can trial-edit text in the preview to verify text fit before requesting a change to the production file. |
+
+---
+
+## 3.4. Expected Impact
+
+The proposed TO-BE process is intended to:
+
+- reduce printing and physical handoffs during revision cycles,
+- make outstanding corrections easier to identify and track,
+- reduce unnecessary DTP iterations caused by text-fit issues,
+- provide both roles with a shared view of the current layout and correction status,
+- shorten the overall chapter revision cycle while preserving DTP ownership of the production source file.
+
+---
+[README →](../README.md) · [01 Problem & Scenario →](./01_problem_and_scenario.md) · [02 Requirements](./02_requirements.md) · **03 Process Diagrams** · [Additional editorial processes →](../additional_editorial_processes.md)
