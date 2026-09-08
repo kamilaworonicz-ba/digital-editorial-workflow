@@ -8,7 +8,7 @@ The overall revision cycle remains unchanged: the Managing Editor reviews the la
 
 ## 3.1. AS-IS Process
 
-The AS-IS model shows the current paper-based revision workflow. Printed proofs are used to review the layout, corrections are marked manually, and the marked-up proof is physically handed over to the DTP Specialist.
+The AS-IS model shows the current paper-based revision workflow, ending with material ready for teacher-focus testing. Printed proofs are used to review the layout, and corrections are marked manually and handed over to the DTP Specialist. If further corrections are needed, the cycle repeats with a newly printed proof — each round producing a separate, disconnected marked-up document.
 
 ![AS-IS chapter revision process](../process_diagram/BPMN_AS-IS_editorial.svg)
 
