@@ -45,17 +45,19 @@ The proposed solution is an **Interactive Layout Preview** designed to address t
 
 **In scope:**
 
-- Shared interactive layout preview for the Managing Editor and DTP Specialist
-- Text-only trial editing for body text, headings, and captions for figures and charts
+- Shared Interactive Layout Preview for the Managing Editor and DTP Specialist
+- Text-only trial editing for body text, headings, and captions
 - Review of photographs, illustrations and captions within the full page layout
 - Digital annotations with `Open` / `Resolved` status
-- Consolidated tracking of outstanding corrections with direct navigation to their location
+- Consolidated tracking of outstanding corrections
+- Updating the Interactive Layout Preview with a new layout version while preserving existing annotations and their statuses
 
 **Out of scope:**
 
-- Asset licensing and rights management
-- Final print-ready production and DAM integration
+- Direct editing of the production source file from within the Interactive Layout Preview
+- Integration of the Interactive Layout Preview with the DTP Specialist’s production editing tool
 - Automatic visual comparison between DTP versions
+- Post-focus revisions and final print production
 
 ---
 
