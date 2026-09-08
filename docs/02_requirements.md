@@ -108,6 +108,9 @@ The following aspects were considered during the analysis but intentionally left
 > **I want** to create correction annotations,<br>
 > **so that** I can request corrections.
 
+<details>
+<summary>Zobacz pełny scenariusz Gherkin dla US-01</summary>
+
 ```gherkin
 Scenario: Creating a correction
   Given the Managing Editor is reviewing a text or visual element
@@ -116,12 +119,16 @@ Scenario: Creating a correction
   And its initial status is "Open"
 ```
 **Related requirements:** FR-03
+</details>
 
 ### User Story — US-02: Reviewing the consolidated corrections list
 
 > **As a** \<role\>,<br>
 > **I want** to review correction annotations for the current chapter,<br>
 > **so that** I can quickly identify which issues have been addressed and which still require attention.
+
+<details>
+<summary>Zobacz pełny scenariusz Gherkin dla US-02</summary>
 
 ```gherkin
 Scenario Outline: Reviewing the consolidated corrections list
@@ -136,13 +143,16 @@ Examples:
     | DTP Specialist    |
 ```
 **Related requirements:** FR-05
-
+</details>
 
 ### User Story — US-03: Applying and resolving corrections in the layout
 
 > **As a** DTP Specialist,<br>
 > **I want** to see requested corrections at the relevant text or visual elements in the current page layout, <br>
 > **so that** I can apply them accurately without relying on marked-up printed proofs.
+
+<details>
+<summary>Zobacz pełny scenariusz Gherkin dla US-03</summary>
 
 ```gherkin
 Scenario: Reviewing a requested correction
@@ -156,15 +166,17 @@ Scenario: Completing a requested correction
   Then the annotation status changes from "Open" to "Resolved"
   And the updated status is visible to the Managing Editor
 ```
-
 **Related requirements:** BR-02, FR-02, FR-03
-
+</details>
 
 ### User Story — US-04: Checking whether revised text fits
 
 > **As a** Managing Editor,  <br>
 > **I want** to trial-edit text directly in the Interactive Layout Preview,  <br>
 > **so that** I can check whether a proposed wording change fits before asking the DTP Specialist to apply it to the production file.
+
+<details>
+<summary>Zobacz pełny scenariusz Gherkin dla US-04</summary>
 
 ```gherkin
 Scenario: Checking whether revised text fits
@@ -173,14 +185,17 @@ Scenario: Checking whether revised text fits
   Then the system shows whether the revised text fits the allotted space
   And the production source file remains unchanged
 ```
-
 **Related requirements:** BR-01, FR-01
+</details>
 
 ### User Story — US-05: Updating the preview with a new layout version
 
 > **As a** DTP Specialist,<br>
 > **I want** to update the Interactive Layout Preview with the latest production layout,<br>
 > **so that** the Managing Editor can review the current version while existing corrections remain traceable.
+
+<details>
+<summary>Zobacz pełny scenariusz Gherkin dla US-05</summary>
 
 ```gherkin
 Scenario: Updating the preview with a new layout version
@@ -190,8 +205,8 @@ Scenario: Updating the preview with a new layout version
   And existing correction annotations are preserved
   And they retain their current status
 ```
-
 **Related requirements:** FR-04, FR-02
+</details>
 
 ---
 
