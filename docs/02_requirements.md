@@ -21,7 +21,7 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
     <td><strong>FR-01</strong></td>
     <td>
       🔍 <strong>No live text fit-check.</strong>
-      Even a small text correction requires DTP Specialist to update the layout before the Managing Editor can verify whether it works.
+      Even a small text correction requires the DTP Specialist to update the layout before the Managing Editor can verify whether it works.
     </td>
     <td>
       The system shall allow the Managing Editor to trial-edit body text, headings and captions in the Interactive Layout Preview and show whether the revised text fits the allotted space.
@@ -97,7 +97,7 @@ The following aspects were considered during the analysis but intentionally left
 6. **Access to previous layout versions (FR-04):** Should previous layout versions remain accessible after the DTP Specialist updates the Interactive Layout Preview with the latest layout version, and if so, should their associated correction annotations also remain available?
 7. **Reopening resolved corrections (FR-03, BR-03):** Should the Managing Editor be able to reopen an annotation after the DTP Specialist has marked it `Resolved`, and under what conditions?
 8. **Annotation target scope (FR-03):** Should correction annotations be limited to text and visual elements, or should additional element types be supported?
-9. **Concurrent editing and layout updates (FR-01, FR-03, FR-04):** What should happen if the Managing Editor is trial-editing text or creating an annotation while the DTP Specialist updates the Interactive Layout Preview with the latest layout version — should the in-progress work be preserved and reapplied, discarded, or temporarily blocked during the update? update?
+9. **Concurrent editing and layout updates (FR-01, FR-03, FR-04):** What should happen if the Managing Editor is trial-editing text or creating an annotation while the DTP Specialist updates the Interactive Layout Preview with the latest layout version — should the in-progress work be preserved and reapplied, discarded, or temporarily blocked during the update?
 
 </details>
 
