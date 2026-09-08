@@ -1,4 +1,4 @@
-# Additional Editorial Process Models
+# Additional Editorial Process Diagrams
 
 This section contains additional BPMN 2.0 process models based on editorial and publishing workflows. They are included to demonstrate process modelling across different scenarios beyond the main case study.
 
