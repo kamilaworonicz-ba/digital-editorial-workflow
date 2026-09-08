@@ -257,7 +257,7 @@ Scenario: Updating the preview with a new layout version
 
 ---
 
-### 2.6. Illustrative NFRs
+## 2.6. Illustrative NFRs
 
 > The values below are illustrative acceptance targets and would require validation with stakeholders and the technical team.
 
