@@ -21,7 +21,7 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
     <td><strong>FR-01</strong></td>
     <td>
       🔍 <strong>No live text fit-check.</strong>
-      Even a small text correction requires DTP to update the layout before the Managing Editor can verify whether it works.
+      Even a small text correction requires DTP Specialist to update the layout before the Managing Editor can verify whether it works.
     </td>
     <td>
       The system shall allow the Managing Editor to trial-edit body text, headings and captions in the Interactive Layout Preview and show whether the revised text fits the allotted space.
