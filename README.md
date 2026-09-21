@@ -23,7 +23,7 @@ Key problems included:
 
 - inability to test whether revised text would fit before DTP rebuilt the page,
 - repeated printing of updated layouts,
- -corrections scattered across handwritten paper proofs.
+- corrections scattered across handwritten paper proofs.
 
 **Goal:** reduce paper-based handoffs and make the revision loop faster, clearer and easier to track through a shared interactive layout preview.
 
