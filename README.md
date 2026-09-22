@@ -15,7 +15,6 @@ The typical AS-IS revision loop was:
 
 `First DTP layout` → &#128397; `Managing Editor review` → `Corrections by DTP Specialist` → `Repeated review cycle` → `Teacher focus testing readiness`
 
----
 
 ## 💡 Problem & Goal
 
@@ -29,7 +28,6 @@ Key problems included:
 
 The proposed solution is an **Interactive Layout Preview** designed to address the problems identified above.
 
----
 
 ## 📈 Success Measures
 
@@ -39,7 +37,6 @@ The proposed solution is an **Interactive Layout Preview** designed to address t
 - **Printed proof reduction:** Within two months of introducing the proposed tool, the number of pages printed during the revision of a 20-page chapter should decrease from approximately 200 pages to no more than 40 pages *(approximately an 80% reduction)*.
 - **Digital correction tracking:** Within two months of introducing the proposed tool, at least 90% of corrections exchanged between the Managing Editor and the DTP Specialist should be recorded and tracked through the shared interactive preview rather than through printed proofs.
 
----
 
 ## 🎯 Scope
 
@@ -59,7 +56,6 @@ The proposed solution is an **Interactive Layout Preview** designed to address t
 - Automatic visual comparison between DTP versions
 - Post-focus revisions and final print production
 
----
 
 ## 📂 Case Study Contents
 
@@ -70,16 +66,12 @@ The proposed solution is an **Interactive Layout Preview** designed to address t
 | [`03_process_diagrams.md`](docs/03_process_diagrams.md) | AS-IS and proposed TO-BE BPMN process diagrams |
 | [`additional_editorial_processes.md`](additional_editorial_processes.md)| BPMN diagrams of other editorial processes outside the scope of this case study |
 
----
 
 ## 📬 Contact
 
-**Kamila Woronicz**
-
-Business Analyst | Product Manager *(career transition)*
-
-- Email: kamila.woronicz@gmail.com
-- Location: Gdańsk, Poland
+**Kamila Woronicz**<br>
+Product Project Manager | Business Analyst <br>
+<kamila.woronicz@gmail.com>
 
 ---
 **README** · [01 Problem & Scenario →](docs/01_problem_and_scenario.md) · [02 Requirements →](docs/02_requirements.md) · [03 Process Diagrams →](docs/03_process_diagrams.md) · [Additional editorial processes →](additional_editorial_processes.md)
