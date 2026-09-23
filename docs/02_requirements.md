@@ -4,8 +4,6 @@ This document specifies the conceptual digital solution proposed for the pain po
 
 The proposed solution is an **Interactive Layout Preview** — a shared digital view of the current page layout that allows both roles to review composition and track corrections, while allowing the Managing Editor to trial-edit text before requesting a change.
 
----
-
 ## 2.1. Functional Requirements
 
 > For conciseness, closely related system behaviours are grouped into a small number of functional requirements.
@@ -69,8 +67,6 @@ The proposed solution is an **Interactive Layout Preview** — a shared digital 
   </tr>
 </table>
 
----
-
 ## 2.2. Business Rules
 
 ### BR-01 — Production File Ownership
@@ -78,8 +74,6 @@ Only the DTP Specialist applies accepted text, layout and visual changes to the 
 
 ### BR-02 — Correction Resolution
 The DTP Specialist is responsible for marking an `Open` annotation `Resolved` only after applying the correction to the production source file. The system does not verify that the described correction has been made.
-
----
 
 ## 2.3. Open Questions & Further Considerations
 
@@ -97,8 +91,6 @@ The following aspects were considered during the analysis but intentionally left
 9. **Concurrent editing and layout updates (FR-01, FR-03, FR-04):** What should happen if the Managing Editor is trial-editing text or creating an annotation while the DTP Specialist updates the Interactive Layout Preview with the latest layout version — should the in-progress work be preserved and reapplied, discarded, or temporarily blocked during the update?
 
 </details>
-
----
 
 ## 2.4. Example User Stories & Acceptance Criteria
 
@@ -208,7 +200,6 @@ Scenario: Updating the preview with a new layout version
 **Related requirements:** FR-04, FR-02
 </details>
 
----
 
 ## 2.5. Requirements Traceability Summary
 
@@ -255,7 +246,6 @@ Scenario: Updating the preview with a new layout version
   </tr>
 </table>
 
----
 
 ## 2.6. Illustrative NFRs
 
