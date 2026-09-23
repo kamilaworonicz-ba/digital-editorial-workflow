@@ -4,7 +4,6 @@ This document compares the AS-IS chapter revision workflow with the proposed TO-
 
 The overall revision cycle remains unchanged: the Managing Editor reviews the layout, required corrections are applied by the DTP Specialist, and the updated version is reviewed again until the material is ready for teacher focus testing. The proposed solution changes how corrections are communicated, tracked and managed.
 
----
 
 ## 3.1. AS-IS Process
 
@@ -16,7 +15,6 @@ The AS-IS model shows the current paper-based revision workflow, ending with mat
 
 [View AS-IS BPMN source file](../process_diagram/BPMN_AS-IS_editorial.bpmn)
 
----
 
 ## 3.2. TO-BE Process
 
@@ -29,7 +27,6 @@ After applying the requested correction to the production source file, the DTP S
 
 [View TO-BE BPMN source file](../process_diagram/BPMN_TO-BE_editorial.bpmn)
 
----
 
 ## 3.3. AS-IS vs TO-BE — Key Process Changes
 
@@ -42,7 +39,6 @@ After applying the requested correction to the production source file, the DTP S
 | Outstanding corrections must be identified by comparing successive printed proofs. | Corrections are tracked using `Open` and `Resolved` statuses and can be reviewed in a consolidated correction list. |
 | Testing whether revised text fits the available layout space requires another DTP iteration. | The Managing Editor can trial-edit text in the preview to verify text fit before requesting a change to the production file. |
 
----
 
 ## 3.4. Expected Impact
 
