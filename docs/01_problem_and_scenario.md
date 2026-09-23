@@ -20,7 +20,6 @@ These pain points provide the basis for the functional requirements defined in [
 | **Managing Editor** |  Reviews successive layout versions, identifies and marks required changes, and confirms readiness for teacher focus testing |
 | **DTP Specialist (Desktop Publishing Specialist)** | Prepares and updates the typeset page layout, places visual assets and applies editorial changes to the source file |
 
----
 
 ## 1.2. Illustrative Scenario
 
